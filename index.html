@@ -3,27 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive World Map</title>
+  <title>Interactive World Map and Bubble Chart</title>
   <!-- Include Vega and Vega-Lite libraries -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
 <body>
-  <h1>Interactive World Map</h1>
-  <!-- Container for the Vega visualization -->
-  <div id="vis"></div>
+  <h1>Interactive World Map and Bubble Chart</h1>
+
+  <!-- Container for the Map Visualization -->
+  <h2>World Map with Line Chart</h2>
+  <div id="map-vis"></div>
+
+  <!-- Container for the Bubble Chart -->
+  <h2>Bubble Chart</h2>
+  <div id="bubble-vis"></div>
 
   <script type="text/javascript">
-    // Load the Vega JSON file from your GitHub repository
-    vegaEmbed('#vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vg.json')
-    .then(function(result) {
-      // Access the Vega view instance as result.view
-      console.log("Visualization loaded successfully!");
-    }).catch(function(error) {
-      console.error("Error loading the visualization:", error);
-    });
+    // Load the Map visualization from your GitHub repository
+    vegaEmbed('#map-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vg.json')
+      .then(function(result) {
+        console.log("Map visualization loaded successfully!");
+      }).catch(function(error) {
+        console.error("Error loading the Map visualization:", error);
+      });
+
+    // Load the Bubble chart visualization from your GitHub repository
+    vegaEmbed('#bubble-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(1).json')
+      .then(function(result) {
+        console.log("Bubble chart visualization loaded successfully!");
+      }).catch(function(error) {
+        console.error("Error loading the Bubble chart visualization:", error);
+      });
   </script>
 </body>
 </html>
-
