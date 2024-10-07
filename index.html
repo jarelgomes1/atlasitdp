@@ -8,17 +8,32 @@
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+  <!-- Add some basic CSS for layout -->
+  <style>
+    /* Container for both visualizations */
+    .visualization-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Styling for each visualization box */
+    #map-vis, #bubble-vis {
+      width: 48%; /* Adjust width to fit both charts horizontally */
+    }
+  </style>
 </head>
 <body>
   <h1>Interactive World Map and Bubble Chart</h1>
 
-  <!-- Container for the Map Visualization -->
-  <h2>World Map with Line Chart</h2>
-  <div id="map-vis"></div>
+  <!-- Container for both visualizations -->
+  <div class="visualization-container">
+    <!-- Container for the Map Visualization -->
+    <div id="map-vis"></div>
 
-  <!-- Container for the Bubble Chart -->
-  <h2>Bubble Chart</h2>
-  <div id="bubble-vis"></div>
+    <!-- Container for the Bubble Chart -->
+    <div id="bubble-vis"></div>
+  </div>
 
   <script type="text/javascript">
     // Load the Map visualization from your GitHub repository
