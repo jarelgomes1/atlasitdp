@@ -2,34 +2,21 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 800,
   "height": 600,
-  "autosize": {
-    "type": "fit",
-    "contains": "padding"
-  },
+  "autosize": {"type": "fit", "contains": "padding"},
   "data": {
     "url": "https://raw.githubusercontent.com/jarelgomes1/atlasitdp/refs/heads/main/Final_Merged_Population_Density_PNRT_Data_Interpolated_Complete.csv",
-    "format": {
-      "type": "csv"
-    }
+    "format": {"type": "csv"}
   },
   "params": [
     {
       "name": "year",
       "value": 1975,
-      "bind": {
-        "input": "range",
-        "min": 1975,
-        "max": 2024,
-        "step": 1
-      }
+      "bind": {"input": "range", "min": 1975, "max": 2024, "step": 1}
     },
     {
       "name": "is_playing",
       "value": false,
-      "bind": {
-        "input": "checkbox",
-        "name": "Auto-play"
-      }
+      "bind": {"input": "checkbox", "name": "Auto-play"}
     }
   ],
   "signals": [
@@ -42,27 +29,15 @@
       "name": "year_start",
       "value": 0,
       "on": [
-        {
-          "events": {"signal": "is_playing"},
-          "update": "is_playing ? now() : 0"
-        }
+        {"events": {"signal": "is_playing"}, "update": "is_playing ? now() : 0"}
       ]
     },
-    {
-      "name": "year",
-      "update": "is_playing ? timer : year"
-    }
+    {"name": "year", "update": "is_playing ? timer : year"}
   ],
   "transform": [
-    {
-      "filter": "datum.Population_Density > 0"
-    },
-    {
-      "filter": "year(datum.Year) == year"
-    },
-    {
-      "filter": "datum.People_Near_Rapid_Transit > 0" 
-    }
+    {"filter": "datum.Population_Density > 0"},
+    {"filter": "year(datum.Year) == year"},
+    {"filter": "datum.People_Near_Rapid_Transit > 0"}
   ],
   "layer": [
     {
@@ -73,45 +48,41 @@
           "type": "temporal",
           "axis": {
             "title": "Year",
-            "values": [1975, 1980, 1985, 1990, 1995, 2000, 2005, 2010, 2015, 2020, 2024],
+            "values": [
+              1975,
+              1980,
+              1985,
+              1990,
+              1995,
+              2000,
+              2005,
+              2010,
+              2015,
+              2020,
+              2024
+            ],
             "tickCount": 10
           }
         },
         "y": {
           "field": "People_Near_Rapid_Transit",
           "type": "quantitative",
-          "axis": {
-            "title": "People Near Rapid Transit"
-          }
+          "axis": {"title": "People Near Rapid Transit"}
         },
         "size": {
           "field": "Population_Density",
           "type": "quantitative",
-          "scale": {
-            "range": [100, 1000]
-          },
-          "legend": {
-            "title": "Population Density"
-          }
+          "scale": {"range": [100, 1000]},
+          "legend": {"title": "Population Density"}
         },
         "color": {
           "field": "Country_Name",
           "type": "nominal",
-          "legend": {
-            "title": "Country"
-          }
+          "legend": {"title": "Country"}
         },
         "tooltip": [
-          {
-            "field": "Country_Name",
-            "type": "nominal",
-            "title": "Country"
-          },
-          {
-            "field": "Year",
-            "type": "temporal",
-            "title": "Year"
-          },
+          {"field": "Country_Name", "type": "nominal", "title": "Country"},
+          {"field": "Year", "type": "temporal", "title": "Year"},
           {
             "field": "People_Near_Rapid_Transit",
             "type": "quantitative",
@@ -128,51 +99,21 @@
     {
       "transform": [
         {
-          "window": [
-            {
-              "op": "rank",
-              "as": "rank"
-            }
-          ],
+          "window": [{"op": "rank", "as": "rank"}],
           "sort": [
-            {
-              "field": "People_Near_Rapid_Transit",
-              "order": "descending"
-            }
+            {"field": "People_Near_Rapid_Transit", "order": "descending"}
           ]
         },
-        {
-          "filter": "datum.rank <= 3"  // Only annotate top 3 countries
-        }
+        {"filter": "datum.rank <= 3"}
       ],
-      "mark": {
-        "type": "text",
-        "align": "left",
-        "baseline": "middle",
-        "dx": 10  // Position offset for better visibility
-      },
+      "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 10},
       "encoding": {
-        "x": {
-          "field": "Year",
-          "type": "temporal"
-        },
-        "y": {
-          "field": "People_Near_Rapid_Transit",
-          "type": "quantitative"
-        },
-        "text": {
-          "field": "Country_Name",
-          "type": "nominal"
-        },
-        "color": {
-          "value": "black"  // Set annotation text color to black
-        }
+        "x": {"field": "Year", "type": "temporal"},
+        "y": {"field": "People_Near_Rapid_Transit", "type": "quantitative"},
+        "text": {"field": "Country_Name", "type": "nominal"},
+        "color": {"value": "black"}
       }
     }
   ],
-  "config": {
-    "view": {
-      "stroke": "transparent"
-    }
-  }
+  "config": {"view": {"stroke": "transparent"}}
 }
