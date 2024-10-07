@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 1200,
+  "autosize": {"type": "fit", "contains": "padding"},
+  "data": {
+    "url": "https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/Final_Merged_Population_Density_PNRT_Data_Interpolated_Complete.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [{"filter": "datum.Population_Density > 0"}],
+  "selection": {
+    "hover": {
+      "type": "single",
+      "on": "mouseover",
+      "empty": "none",
+      "fields": ["Country_Name"],
+      "nearest": true
+    }
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": "Year",
+        "values": [
+          1975,
+          1980,
+          1985,
+          1990,
+          1995,
+          2000,
+          2005,
+          2010,
+          2015,
+          2020,
+          2024
+        ],
+        "tickCount": 10
+      }
+    },
+    "y": {
+      "field": "Country_Name",
+      "type": "nominal",
+      "axis": {"title": "Country", "labelAngle": 0, "grid": true}
+    },
+    "color": {
+      "field": "People_Near_Rapid_Transit",
+      "type": "quantitative",
+      "scale": {"scheme": "reds"},
+      "legend": {"title": "People Near Rapid Transit"}
+    },
+    "opacity": {"condition": {"selection": "hover", "value": 1}, "value": 0.6},
+    "tooltip": [
+      {"field": "Country_Name", "type": "nominal", "title": "Country"},
+      {"field": "Year", "type": "temporal", "title": "Year"},
+      {
+        "field": "People_Near_Rapid_Transit",
+        "type": "quantitative",
+        "title": "People Near Rapid Transit"
+      },
+      {
+        "field": "Population_Density",
+        "type": "quantitative",
+        "title": "Population Density"
+      }
+    ]
+  },
+  "mark": "rect",
+  "config": {"view": {"stroke": "transparent"}}
+}
