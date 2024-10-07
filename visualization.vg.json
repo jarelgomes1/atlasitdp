@@ -43,6 +43,10 @@
           "expr": "datum.Country_Name === clicked_country && datum.People_Near_Rapid_Transit > 0 && datum.Population_Density > 0"
         }
       ]
+    },
+    {
+      "name": "graticule",
+      "transform": [{"type": "graticule"}]
     }
   ],
   "marks": [
@@ -73,6 +77,17 @@
               "tooltip": {
                 "signal": "{'Country': datum.properties.name, 'People Near Transit': datum.People_Near_Rapid_Transit, 'Population Density': datum.Population_Density}"
               }
+            }
+          }
+        },
+        {
+          "type": "shape",
+          "from": {"data": "graticule"},
+          "transform": [{"type": "geoshape", "projection": "mercator"}],
+          "encode": {
+            "enter": {
+              "stroke": {"value": "#cccccc"},
+              "strokeWidth": {"value": 0.5}
             }
           }
         }
