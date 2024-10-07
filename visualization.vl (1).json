@@ -61,7 +61,7 @@
       "filter": "year(datum.Year) == year"
     },
     {
-      "filter": "datum.People_Near_Rapid_Transit > 0"  // Ensure only non-zero values are considered
+      "filter": "datum.People_Near_Rapid_Transit > 0" 
     }
   ],
   "layer": [
