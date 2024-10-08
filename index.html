@@ -12,19 +12,6 @@
 
   <!-- Link the external CSS file -->
   <link rel="stylesheet" href="dashboard-styles.css">
-
-  <style>
-    .map-container {
-      width: 600px;
-      overflow: hidden;
-    }
-
-    .line-container {
-      width: 600px;
-      overflow: hidden;
-      transform: translateX(-600px); /* Shift the view to the line chart area */
-    }
-  </style>
 </head>
 <body>
   <h1>Exploring Urban Growth and Transit Access Over Time</h1>
@@ -33,24 +20,14 @@
     In this visualization, we explore how urban population density and access to rapid transit systems have evolved across different countries over the years. The visualizations below provide insights into how the number of people living near rapid transit systems has grown in tandem with increasing urbanization.
   </p>
 
-  <!-- Full-width row for Map and Line chart -->
-  <div class="visualization-full-container" style="display: flex;">
-    <!-- Map Container -->
-    <div class="map-container">
-      <h2>World Population Density and Rapid Transit Access (Map)</h2>
+  <!-- Full-width row for Map/Line chart as one visualization -->
+  <div class="visualization-full-container">
+    <div class="vis-box" style="width: 100%;">
+      <h2>World Population Density and Rapid Transit Access Over Time</h2>
       <p>
-        This map shows how different countries' urban population density has changed over the years and how many people now have access to rapid transit systems. This line chart shows the change in population density and access to rapid transit systems for selected countries over time.
+        This combined visualization shows how countries' urban population density has changed over the years, and how the number of people living near rapid transit systems has evolved.
       </p>
-      <div id="map-vis"></div>
-    </div>
-
-    <!-- Line chart section (on the right) -->
-    <div class="line-container">
-      <h2>People Near Rapid Transit Over Time (Line Chart)</h2>
-      <p>
-        This line chart shows the change in population density and access to rapid transit systems for selected countries over time.
-      </p>
-      <div id="line-vis"></div>
+      <div id="map-line-vis"></div> <!-- One container for both map and line chart -->
     </div>
   </div>
 
@@ -91,12 +68,12 @@
   </p>
 
   <script type="text/javascript">
-    // Load the combined Map/Line chart visualization from your GitHub repository
-    vegaEmbed('#map-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vg.json')
+    // Load the Map/Line chart combination as one visualization
+    vegaEmbed('#map-line-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization-combined-map-line.json')
       .then(function(result) {
         console.log("Map and Line chart visualization loaded successfully!");
       }).catch(function(error) {
-        console.error("Error loading the Map/Line chart visualization:", error);
+        console.error("Error loading the Map and Line chart visualization:", error);
       });
 
     // Load the Bubble chart visualization from your GitHub repository
