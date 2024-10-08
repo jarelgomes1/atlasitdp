@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Simplified Violin Plot showing ridership distribution across transport types.",
+  "width": 800,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/jarelgomes1/atlasitdp/refs/heads/main/Final_Merged_Population_Density_PNRT_Data_Interpolated_Complete.csv",
+    "format": {"type": "csv"}
+  },
+  "transform": [
+    {"filter": "datum.People_Near_Rapid_Transit > 0"},
+    {
+      "filter": "indexof(['Argentina', 'Brazil', 'France', 'Germany', 'Mexico', 'United States'], datum.Country_Name) > -1"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "orient": "vertical",
+        "interpolate": "monotone",
+        "fill": "lightblue",
+        "opacity": 0.7
+      },
+      "encoding": {
+        "x": {
+          "field": "People_Near_Rapid_Transit",
+          "type": "quantitative",
+          "axis": {"title": "People Near Rapid Transit"}
+        },
+        "y": {
+          "field": "Country_Name",
+          "type": "nominal",
+          "axis": {"title": "Country"}
+        }
+      }
+    },
+    {
+      "mark": "point",
+      "encoding": {
+        "x": {"field": "People_Near_Rapid_Transit", "type": "quantitative"},
+        "y": {"field": "Country_Name", "type": "nominal"},
+        "color": {"field": "Country_Name", "type": "nominal"},
+        "tooltip": [
+          {"field": "Country_Name"},
+          {"field": "People_Near_Rapid_Transit"}
+        ]
+      }
+    }
+  ],
+  "config": {}
+}
