@@ -11,16 +11,18 @@
 
   <!-- Add some basic CSS for layout and text styling -->
   <style>
-    /* Container for the three visualizations */
+    /* Container for the visualizations */
     .visualization-container {
       display: flex;
       justify-content: space-around;
       margin-bottom: 20px;
+      flex-wrap: wrap; /* Allow wrapping for responsive layout */
     }
 
     /* Styling for each visualization box */
     .vis-box {
-      width: 30%; /* Adjust width for three columns */
+      width: 45%; /* Adjust width for two columns */
+      margin-bottom: 40px;
     }
 
     /* Text content styling */
@@ -41,7 +43,7 @@
     In this visualization, we explore how urban population density and access to rapid transit systems have evolved across different countries over the years. The visualizations below provide insights into how the number of people living near rapid transit systems has grown in tandem with increasing urbanization.
   </p>
 
-  <!-- Container for all three visualizations -->
+  <!-- Container for all visualizations -->
   <div class="visualization-container">
     <!-- Container for the Map Visualization -->
     <div class="vis-box">
@@ -68,6 +70,15 @@
         This bubble chart highlights the proportion of people living near rapid transit systems in each country for a selected year. The size of each bubble represents the country's population density, and you can follow trends over time using the slider or autoplay feature.
       </p>
       <div id="bubble-vis"></div>
+    </div>
+    
+    <!-- Container for the Violin Plot -->
+    <div class="vis-box">
+      <h2>Violin Plot of Ridership Distribution</h2>
+      <p>
+        This violin plot shows the distribution of people near rapid transit systems across selected countries. The points represent individual data values, and the blue area shows the distribution density.
+      </p>
+      <div id="violin-vis"></div>
     </div>
   </div>
 
@@ -98,6 +109,14 @@
         console.log("Bubble chart visualization loaded successfully!");
       }).catch(function(error) {
         console.error("Error loading the Bubble chart visualization:", error);
+      });
+
+    // Load the Violin plot visualization from your GitHub repository
+    vegaEmbed('#violin-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(3).json')
+      .then(function(result) {
+        console.log("Violin plot loaded successfully!");
+      }).catch(function(error) {
+        console.error("Error loading the Violin plot:", error);
       });
   </script>
 </body>
