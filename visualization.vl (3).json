@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Simplified Violin Plot showing ridership distribution across transport types.",
+  "description": "Violin Plot with individual country selection for comparison across six options.",
   "width": 800,
   "height": 400,
   "data": {
@@ -8,9 +8,163 @@
     "format": {"type": "csv"}
   },
   "transform": [
-    {"filter": "datum.People_Near_Rapid_Transit > 0"},
     {
-      "filter": "indexof(['Argentina', 'Brazil', 'France', 'Germany', 'Mexico', 'United States'], datum.Country_Name) > -1"
+      "filter": "indexof([country1, country2, country3, country4, country5, country6], datum.Country_Name) > -1"
+    }
+  ],
+  "params": [
+    {
+      "name": "country1",
+      "value": "Argentina",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Argentina",
+          "Brazil",
+          "France",
+          "Germany",
+          "Mexico",
+          "United States",
+          "Australia",
+          "Canada",
+          "China",
+          "Japan",
+          "India",
+          "Russia",
+          "Singapore"
+        ],
+        "labels": [
+          "Argentina",
+          "Brazil",
+          "France",
+          "Germany",
+          "Mexico",
+          "United States",
+          "Australia",
+          "Canada",
+          "China",
+          "Japan",
+          "India",
+          "Russia",
+          "Singapore"
+        ],
+        "name": "Country 1: "
+      }
+    },
+    {
+      "name": "country2",
+      "value": "Brazil",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Argentina",
+          "Brazil",
+          "France",
+          "Germany",
+          "Mexico",
+          "United States",
+          "Australia",
+          "Canada",
+          "China",
+          "Japan",
+          "India",
+          "Russia",
+          "Singapore"
+        ],
+        "name": "Country 2: "
+      }
+    },
+    {
+      "name": "country3",
+      "value": "France",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Argentina",
+          "Brazil",
+          "France",
+          "Germany",
+          "Mexico",
+          "United States",
+          "Australia",
+          "Canada",
+          "China",
+          "Japan",
+          "India",
+          "Russia",
+          "Singapore"
+        ],
+        "name": "Country 3: "
+      }
+    },
+    {
+      "name": "country4",
+      "value": "Germany",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Argentina",
+          "Brazil",
+          "France",
+          "Germany",
+          "Mexico",
+          "United States",
+          "Australia",
+          "Canada",
+          "China",
+          "Japan",
+          "India",
+          "Russia",
+          "Singapore"
+        ],
+        "name": "Country 4: "
+      }
+    },
+    {
+      "name": "country5",
+      "value": "Mexico",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Argentina",
+          "Brazil",
+          "France",
+          "Germany",
+          "Mexico",
+          "United States",
+          "Australia",
+          "Canada",
+          "China",
+          "Japan",
+          "India",
+          "Russia",
+          "Singapore"
+        ],
+        "name": "Country 5: "
+      }
+    },
+    {
+      "name": "country6",
+      "value": "United States",
+      "bind": {
+        "input": "select",
+        "options": [
+          "Argentina",
+          "Brazil",
+          "France",
+          "Germany",
+          "Mexico",
+          "United States",
+          "Australia",
+          "Canada",
+          "China",
+          "Japan",
+          "India",
+          "Russia",
+          "Singapore"
+        ],
+        "name": "Country 6: "
+      }
     }
   ],
   "layer": [
