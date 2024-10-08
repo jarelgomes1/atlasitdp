@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Violin Plot with individual country selection for comparison across six options.",
-  "width": 800,
-  "height": 400,
+  "width": 550,
+  "height": 600,
   "data": {
     "url": "https://raw.githubusercontent.com/jarelgomes1/atlasitdp/refs/heads/main/Final_Merged_Population_Density_PNRT_Data_Interpolated_Complete.csv",
     "format": {"type": "csv"}
