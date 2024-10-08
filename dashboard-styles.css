@@ -1,20 +1,18 @@
 /* Reset box-sizing for all elements */
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Modern flat color palette */
+/* Global Styling */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f7f9fc;
+    background-color: #f0f4f8;
     color: #333;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Links */
 a {
     text-decoration: none;
     color: #3498db;
@@ -23,29 +21,40 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
-/* Headers */
+/* Headers with interactivity */
 h1, h2, h3, p {
     text-align: center;
     color: #333;
     transition: color 0.3s ease-in-out;
 }
+
 h1 {
     margin: 20px 0;
     font-size: 2.5rem;
     font-weight: 700;
-    letter-spacing: 1.5px;
     color: #2c3e50;
+    letter-spacing: 1.5px;
+    cursor: pointer;
 }
+
 h2 {
     margin: 15px 0;
     font-size: 1.7rem;
     font-weight: 600;
     color: #34495e;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
+
+h2:hover {
+    color: #e74c3c; /* Interactive color change on hover */
+}
+
 h3 {
-    font-weight: 100;
+    font-weight: 300;
     color: #555;
 }
+
 p {
     margin: 0 auto 20px;
     max-width: 800px;
@@ -53,110 +62,36 @@ p {
     color: #666;
 }
 
-/* Layout styling */
-.pure-img-responsive {
-    max-width: 100%;
-    height: auto;
-}
-
-#layout {
-    padding: 0;
-}
-
-/* Header Styling */
-.header {
-    text-align: center;
-    margin: 4em auto;
-    color: #2c3e50;
-    transition: color 0.3s ease-in-out;
-}
-
-/* Sidebar Styling */
-.sidebar {
-    background: #34495e;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 240px;
-    padding: 20px;
-    transition: all 0.3s ease-in-out;
-}
-
-.brand-title, .brand-tagline {
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-.brand-title {
-    text-transform: uppercase;
-    font-weight: 700;
-}
-.brand-tagline {
-    font-weight: 300;
-    color: #bdc3c7;
-}
-
-.nav-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.nav-item {
-    display: block;
-    margin-top: 1em;
-}
-.nav-item a {
-    background: #2c3e50;
-    border: 2px solid transparent;
-    color: #fff;
-    padding: 10px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-size: 85%;
-    transition: background 0.3s ease-in-out, border-color 0.3s ease-in-out;
-}
-.nav-item a:hover, .nav-item a:focus {
-    border-color: #3498db;
-    background: #2980b9;
-}
-
-/* Content Styling */
-.content {
-    padding: 2em 1em 0;
-    margin-left: 270px;
-    transition: all 0.3s ease-in-out;
-}
-
-/* Visualization Boxes */
+/* Visualization Containers */
 .visualization-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 30px auto;
     padding: 0 20px;
+    max-width: 1200px;
 }
 
 .vis-box {
-    width: 48%; /* Take 48% width for two-column layout */
+    width: 48%;
     margin-bottom: 30px;
-    background-color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-sizing: border-box;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
 }
+
 .vis-box:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .vis-box h2 {
+    font-size: 1.6rem;
     margin-bottom: 15px;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #34495e;
 }
 
 .vis-box p {
@@ -164,36 +99,100 @@ p {
     color: #555;
 }
 
-.vis-box iframe, 
+/* Interactive Vega Embeds */
+.vega-embed {
+    transition: box-shadow 0.3s ease;
+}
+
+.vega-embed:hover {
+    box-shadow: 0px 6px 20px rgba(50, 50, 93, 0.2);
+    border-radius: 5px;
+    transform: scale(1.01);
+}
+
+/* Custom Scrollable Visualization Container */
+.vis-box .scrollable-vis {
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+/* Adjust iframe visualization height to prevent overflow */
+.vis-box iframe,
 .vis-box > div {
     width: 100%;
-    height: auto;
-    display: block;
-}
-
-.vis-box div.vega-embed {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Hover effects for interactive data elements */
-.vega-embed:hover {
-    box-shadow: 0px 4px 15px rgba(50, 50, 93, 0.2);
-    border-radius: 5px;
-    transition: all 0.3s ease;
+    height: 400px; /* Fix height to prevent overflow */
 }
 
 /* Responsive Design */
 @media (max-width: 1000px) {
     .vis-box {
-        width: 100%; /* Take full width on smaller screens */
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
-@media (max-width: 600px) {
-    .content {
-        margin-left: 0;
-        padding: 10px;
+/* Sidebar Interactivity */
+.sidebar {
+    background-color: #2c3e50;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.sidebar:hover {
+    transform: translateX(10px);
+}
+
+.nav-item {
+    margin-top: 1em;
+}
+
+.nav-item a {
+    background: #34495e;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-item a:hover {
+    background-color: #2980b9;
+}
+
+/* Subtle Animations */
+.visualization-container {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Loading Animations */
+.vis-box.loading {
+    background: linear-gradient(90deg, #f0f4f8, #e0e6ed, #f0f4f8);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
     }
 }
 
@@ -204,23 +203,21 @@ p {
     color: #bdc3c7;
     text-align: center;
 }
+
 .footer a {
     color: #bdc3c7;
     font-size: 80%;
-    text-decoration: none;
 }
+
 .footer a:hover,
 .footer a:focus {
     color: #fff;
 }
 
-/* Subtle loading animations */
-.visualization-container {
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
 }
