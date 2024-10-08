@@ -1,0 +1,825 @@
+"Source","Target","Value"
+"Argentina","Population_Near_Rapid_Transit",0.0876048088525019
+"Argentina","Population_Near_Fast_Transit",0.651768163986148
+"Argentina","Population_Near_National_Highways",0.791800911074585
+"Argentina","Population_Near_Cycling_Facilities",0.22404771928151
+"Argentina","Population_Near_Sidewalks",0.774357538457481
+"Argentina","Population_Near_Pedestrian_Bridges",0.127240391600132
+"Argentina","Population_Density",10746.0478846286
+"Argentina","Population_Near_Sustainable_Transport",0.00743878640073392
+"Chile","Population_Near_Rapid_Transit",0.195809390567026
+"Chile","Population_Near_National_Highways",0.651903157992141
+"Chile","Population_Near_Cycling_Facilities",0.502979823397929
+"Chile","Population_Near_Sidewalks",0.802592596875541
+"Chile","Population_Near_Pedestrian_Bridges",0.244167009855396
+"Chile","Population_Density",15550.750661283
+"Chile","Population_Near_Sustainable_Transport",0.0913629142085405
+"Uruguay","Population_Near_National_Highways",0.833296142808245
+"Uruguay","Population_Near_Cycling_Facilities",0.351323946991278
+"Uruguay","Population_Near_Sidewalks",0.846593592930567
+"Uruguay","Population_Near_Pedestrian_Bridges",0.146354205717442
+"Uruguay","Population_Density",11368.9984240644
+"Paraguay","Population_Near_National_Highways",0.80015356735293
+"Paraguay","Population_Near_Cycling_Facilities",0.223884264176534
+"Paraguay","Population_Near_Sidewalks",0.708741653267861
+"Paraguay","Population_Near_Pedestrian_Bridges",0.0297245485443756
+"Paraguay","Population_Density",4984.81252437589
+"Bolivia","Population_Near_Rapid_Transit",0.0307006241603705
+"Bolivia","Population_Near_National_Highways",0.625504482589469
+"Bolivia","Population_Near_Cycling_Facilities",0.405218381779647
+"Bolivia","Population_Near_Sidewalks",0.772153996570325
+"Bolivia","Population_Near_Pedestrian_Bridges",0.0306828463375305
+"Bolivia","Population_Density",10511.2112820106
+"Bolivia","Population_Near_Sustainable_Transport",0.00185788555426488
+"Brazil","Population_Near_Rapid_Transit",0.0456192976087277
+"Brazil","Population_Near_Fast_Transit",0.198437407246954
+"Brazil","Population_Near_National_Highways",0.605774578395561
+"Brazil","Population_Near_Cycling_Facilities",0.317185296744064
+"Brazil","Population_Near_Sidewalks",0.612230331634401
+"Brazil","Population_Near_Pedestrian_Bridges",0.0638872123055631
+"Brazil","Population_Density",21496.4735615718
+"Brazil","Population_Near_Sustainable_Transport",0.00839500580151071
+"New Zealand","Population_Near_Fast_Transit",0.396291044925089
+"New Zealand","Population_Near_National_Highways",0.795108498151871
+"New Zealand","Population_Near_Cycling_Facilities",0.626334568108091
+"New Zealand","Population_Near_Sidewalks",0.677731344209421
+"New Zealand","Population_Near_Pedestrian_Bridges",0.201914496850348
+"New Zealand","Population_Density",6833.88265882856
+"New Zealand","Population_Near_Sustainable_Transport",0.100606313324373
+"Gabon","Population_Near_National_Highways",0.686500950854685
+"Gabon","Population_Near_Cycling_Facilities",0.0241051723544127
+"Gabon","Population_Near_Sidewalks",0.336083503402133
+"Gabon","Population_Density",9434.29987374222
+"France","Population_Near_Rapid_Transit",0.490431769180681
+"France","Population_Near_Fast_Transit",0.712330765233578
+"France","Population_Near_National_Highways",0.629739232961582
+"France","Population_Near_Cycling_Facilities",0.722797335986263
+"France","Population_Near_Sidewalks",0.894022651406278
+"France","Population_Near_Pedestrian_Bridges",0.436031850667458
+"France","Population_Density",14916.4166982927
+"France","Population_Near_Sustainable_Transport",0.100270525181638
+"Equatorial Guinea","Population_Near_National_Highways",0.783373442457097
+"Equatorial Guinea","Population_Near_Cycling_Facilities",0.0618145573452273
+"Equatorial Guinea","Population_Near_Sidewalks",0.0287118392535213
+"Equatorial Guinea","Population_Density",23019.1579412818
+"Liberia","Population_Near_National_Highways",0.907187038775616
+"Liberia","Population_Near_Cycling_Facilities",0.240200336606629
+"Liberia","Population_Near_Sidewalks",0.155387203620188
+"Liberia","Population_Density",13532.4510473623
+"Cameroon","Population_Near_Fast_Transit",0.0565906060677427
+"Cameroon","Population_Near_National_Highways",0.838930325592109
+"Cameroon","Population_Near_Cycling_Facilities",0.0733639672327203
+"Cameroon","Population_Near_Sidewalks",0.668641689792813
+"Cameroon","Population_Density",34048.3256337136
+"Peru","Population_Near_Rapid_Transit",0.0782966699652771
+"Peru","Population_Near_National_Highways",0.592695224635653
+"Peru","Population_Near_Cycling_Facilities",0.591379131869751
+"Peru","Population_Near_Sidewalks",0.861483915581695
+"Peru","Population_Near_Pedestrian_Bridges",0.129702009888115
+"Peru","Population_Density",21483.5328379675
+"Peru","Population_Near_Sustainable_Transport",0.023042780341179
+"Ecuador","Population_Near_Rapid_Transit",0.159359465022225
+"Ecuador","Population_Near_National_Highways",0.528098503288268
+"Ecuador","Population_Near_Cycling_Facilities",0.360248206783573
+"Ecuador","Population_Near_Sidewalks",0.761634650622895
+"Ecuador","Population_Near_Pedestrian_Bridges",0.046245211624727
+"Ecuador","Population_Density",17061.1628322807
+"Ecuador","Population_Near_Sustainable_Transport",0.0238181779876095
+"United Kingdom","Population_Near_Rapid_Transit",0.00627938746781304
+"United Kingdom","Population_Near_Fast_Transit",0.0818516642682542
+"United Kingdom","Population_Near_National_Highways",0.785274735659583
+"United Kingdom","Population_Near_Cycling_Facilities",0.718309642451978
+"United Kingdom","Population_Near_Sidewalks",0.808933549741853
+"United Kingdom","Population_Near_Pedestrian_Bridges",0.276070353456008
+"United Kingdom","Population_Density",11930.442465215
+"United Kingdom","Population_Near_Sustainable_Transport",0.00602577862822616
+"Colombia","Population_Near_Rapid_Transit",0.214879923551284
+"Colombia","Population_Near_Fast_Transit",0.849255121005812
+"Colombia","Population_Near_National_Highways",0.482219177916306
+"Colombia","Population_Near_Cycling_Facilities",0.635730700858748
+"Colombia","Population_Near_Sidewalks",0.775941654552273
+"Colombia","Population_Near_Pedestrian_Bridges",0.282542726232144
+"Colombia","Population_Density",31042.7881647007
+"Colombia","Population_Near_Sustainable_Transport",0.0293383335490273
+"Venezuela","Population_Near_Rapid_Transit",0.100327625164797
+"Venezuela","Population_Near_National_Highways",0.653442183397672
+"Venezuela","Population_Near_Cycling_Facilities",0.154717563102059
+"Venezuela","Population_Near_Sidewalks",0.429872656477139
+"Venezuela","Population_Near_Pedestrian_Bridges",0.0039979916497487
+"Venezuela","Population_Density",15649.8881004866
+"Venezuela","Population_Near_Sustainable_Transport",0.00383667161378457
+"Costa Rica","Population_Near_National_Highways",0.815214132310256
+"Costa Rica","Population_Near_Cycling_Facilities",0.341558461419364
+"Costa Rica","Population_Near_Sidewalks",0.7196862273232
+"Costa Rica","Population_Density",10782.3396284889
+"Panama","Population_Near_Rapid_Transit",0.168175995230776
+"Panama","Population_Near_National_Highways",0.516030379526434
+"Panama","Population_Near_Cycling_Facilities",0.231869307901921
+"Panama","Population_Near_Sidewalks",0.47942267507469
+"Panama","Population_Near_Pedestrian_Bridges",0.0111352555665959
+"Panama","Population_Density",17391.2231194217
+"Panama","Population_Near_Sustainable_Transport",0.0055465501585464
+"Côte d’Ivoire","Population_Near_Fast_Transit",0.184667700074875
+"Côte d’Ivoire","Population_Near_National_Highways",0.732246894781437
+"Côte d’Ivoire","Population_Near_Cycling_Facilities",0.190692263867425
+"Côte d’Ivoire","Population_Near_Sidewalks",0.771087693821909
+"Côte d’Ivoire","Population_Density",29354.9356679778
+"Ghana","Population_Near_Fast_Transit",0.0677654616478776
+"Ghana","Population_Near_National_Highways",0.749445480946758
+"Ghana","Population_Near_Cycling_Facilities",0.073812975445736
+"Ghana","Population_Near_Sidewalks",0.420549545227328
+"Ghana","Population_Density",17289.4630431597
+"Sierra Leone","Population_Near_National_Highways",0.694610892882018
+"Sierra Leone","Population_Near_Cycling_Facilities",0.349475356070916
+"Sierra Leone","Population_Near_Sidewalks",0.432678823068119
+"Sierra Leone","Population_Density",30385.3158086865
+"Togo","Population_Near_National_Highways",0.675659809245383
+"Togo","Population_Near_Cycling_Facilities",0.250378683364221
+"Togo","Population_Near_Sidewalks",0.586399754262404
+"Togo","Population_Density",10611.1097346211
+"Nigeria","Population_Near_Rapid_Transit",0.00525078040990184
+"Nigeria","Population_Near_National_Highways",0.700832545019075
+"Nigeria","Population_Near_Cycling_Facilities",0.0259075055245066
+"Nigeria","Population_Near_Sidewalks",0.060057028361421
+"Nigeria","Population_Density",21537.857327138
+"Benin","Population_Near_National_Highways",0.695500834275307
+"Benin","Population_Near_Cycling_Facilities",0.108395607047306
+"Benin","Population_Near_Sidewalks",0.607606926662917
+"Benin","Population_Density",13524.456974447
+"Guinea","Population_Near_National_Highways",0.58863971548046
+"Guinea","Population_Near_Cycling_Facilities",0.0815217126958038
+"Guinea","Population_Near_Sidewalks",0.65564052341724
+"Guinea","Population_Density",22382.9272809653
+"Guinea-Bissau","Population_Near_National_Highways",0.860818238821158
+"Guinea-Bissau","Population_Near_Cycling_Facilities",0.163447525457803
+"Guinea-Bissau","Population_Near_Sidewalks",0.145775543233517
+"Guinea-Bissau","Population_Density",16595.1091395534
+"Burkina Faso","Population_Near_National_Highways",0.882084792737344
+"Burkina Faso","Population_Near_Cycling_Facilities",0.227473788061842
+"Burkina Faso","Population_Near_Sidewalks",0.466539018832256
+"Burkina Faso","Population_Near_Pedestrian_Bridges",0.092026060041133
+"Burkina Faso","Population_Density",12455.8917686461
+"Norway","Population_Near_Rapid_Transit",0.495822691872671
+"Norway","Population_Near_National_Highways",0.558010921694637
+"Norway","Population_Near_Cycling_Facilities",0.847002554447111
+"Norway","Population_Near_Sidewalks",0.868715130529343
+"Norway","Population_Near_Pedestrian_Bridges",0.598981505246808
+"Norway","Population_Density",8159.21033660741
+"Norway","Population_Near_Sustainable_Transport",0.295724823458675
+"Gambia","Population_Near_National_Highways",0.910972246715269
+"Gambia","Population_Near_Cycling_Facilities",0.0786215026180071
+"Gambia","Population_Near_Sidewalks",0.276007106395592
+"Gambia","Population_Density",13554.1316651372
+"Senegal","Population_Near_National_Highways",0.57216970515512
+"Senegal","Population_Near_Cycling_Facilities",0.111959365801945
+"Senegal","Population_Near_Sidewalks",0.676703217398324
+"Senegal","Population_Density",26159.4357852294
+"Mali","Population_Near_National_Highways",0.860076105605768
+"Mali","Population_Near_Cycling_Facilities",0.0765394450670158
+"Mali","Population_Near_Sidewalks",0.793394782057478
+"Mali","Population_Density",24840.5458425972
+"Niger","Population_Near_National_Highways",0.85668015987642
+"Niger","Population_Near_Cycling_Facilities",0.1064214457173
+"Niger","Population_Near_Sidewalks",0.658719013041262
+"Niger","Population_Near_Pedestrian_Bridges",0.0526279644533118
+"Niger","Population_Density",18328.2413792803
+"Mauritania","Population_Near_National_Highways",0.902119369942407
+"Mauritania","Population_Near_Cycling_Facilities",0.0969218276895597
+"Mauritania","Population_Near_Sidewalks",0.836786835285259
+"Mauritania","Population_Density",22895.8441586202
+"Algeria","Population_Near_Rapid_Transit",0.169336542790723
+"Algeria","Population_Near_Fast_Transit",0.00207442024465732
+"Algeria","Population_Near_National_Highways",0.461593337081608
+"Algeria","Population_Near_Cycling_Facilities",0.151845072866376
+"Algeria","Population_Near_Sidewalks",0.718155474809718
+"Algeria","Population_Near_Pedestrian_Bridges",0.00402867811915787
+"Algeria","Population_Density",19995.1367704365
+"Algeria","Population_Near_Sustainable_Transport",0.00130665169339951
+"United States","Population_Near_Rapid_Transit",0.122847745523949
+"United States","Population_Near_Fast_Transit",0.199809373801375
+"United States","Population_Near_National_Highways",0.738529307070943
+"United States","Population_Near_Cycling_Facilities",0.274151703127697
+"United States","Population_Near_Sidewalks",0.395678575056785
+"United States","Population_Near_Pedestrian_Bridges",0.105738086709643
+"United States","Population_Density",10417.0604265719
+"United States","Population_Near_Sustainable_Transport",0.0442978549720464
+"Morocco","Population_Near_Rapid_Transit",0.129090777081364
+"Morocco","Population_Near_National_Highways",0.521705646963866
+"Morocco","Population_Near_Cycling_Facilities",0.288775737635128
+"Morocco","Population_Near_Sidewalks",0.729816240759531
+"Morocco","Population_Near_Pedestrian_Bridges",0.00493822799893414
+"Morocco","Population_Density",49619.1390625891
+"Morocco","Population_Near_Sustainable_Transport",5.2207249578381e-05
+"Nicaragua","Population_Near_Fast_Transit",0.675668884689063
+"Nicaragua","Population_Near_National_Highways",0.770841401872516
+"Nicaragua","Population_Near_Cycling_Facilities",0.228679483801639
+"Nicaragua","Population_Near_Sidewalks",0.757118689026534
+"Nicaragua","Population_Density",12551.8161973537
+"El Salvador","Population_Near_National_Highways",0.562147501955546
+"El Salvador","Population_Near_Cycling_Facilities",0.346256532391729
+"El Salvador","Population_Near_Sidewalks",0.54800311625589
+"El Salvador","Population_Density",17281.9616253189
+"Honduras","Population_Near_National_Highways",0.527824040768905
+"Honduras","Population_Near_Cycling_Facilities",0.278439071352404
+"Honduras","Population_Near_Sidewalks",0.50469539580142
+"Honduras","Population_Density",17483.3434149006
+"Guatemala","Population_Near_Rapid_Transit",0.00764391671292742
+"Guatemala","Population_Near_National_Highways",0.625183526921804
+"Guatemala","Population_Near_Cycling_Facilities",0.249772656823164
+"Guatemala","Population_Near_Sidewalks",0.373610646405937
+"Guatemala","Population_Near_Pedestrian_Bridges",0.0158331718388271
+"Guatemala","Population_Density",16697.0180040899
+"Guatemala","Population_Near_Sustainable_Transport",0.000215461616111196
+"Jamaica","Population_Near_National_Highways",0.761501163687433
+"Jamaica","Population_Near_Cycling_Facilities",0.142855514057001
+"Jamaica","Population_Near_Sidewalks",0.57598110944273
+"Jamaica","Population_Density",7748.75077450951
+"Dominican Republic","Population_Near_Rapid_Transit",0.0756608044116222
+"Dominican Republic","Population_Near_National_Highways",0.622454130996312
+"Dominican Republic","Population_Near_Cycling_Facilities",0.16382138355255
+"Dominican Republic","Population_Near_Sidewalks",0.590787559051335
+"Dominican Republic","Population_Near_Pedestrian_Bridges",0.0143287007968472
+"Dominican Republic","Population_Density",17464.521994764
+"Dominican Republic","Population_Near_Sustainable_Transport",0.00256124033404328
+"Haiti","Population_Near_National_Highways",0.91723412437905
+"Haiti","Population_Near_Cycling_Facilities",0.360361659736486
+"Haiti","Population_Near_Sidewalks",0.798422381474972
+"Haiti","Population_Density",17441.6929027384
+"Cuba","Population_Near_National_Highways",0.759795300239361
+"Cuba","Population_Near_Cycling_Facilities",0.415794851747831
+"Cuba","Population_Near_Sidewalks",0.81627097588462
+"Cuba","Population_Density",21812.1872538548
+"Mexico","Population_Near_Rapid_Transit",0.114603827613525
+"Mexico","Population_Near_Fast_Transit",0.0118040548681557
+"Mexico","Population_Near_National_Highways",0.613311086536909
+"Mexico","Population_Near_Cycling_Facilities",0.302537784568812
+"Mexico","Population_Near_Sidewalks",0.45954927723915
+"Mexico","Population_Near_Pedestrian_Bridges",0.0573840360855756
+"Mexico","Population_Density",13861.7454498327
+"Mexico","Population_Near_Sustainable_Transport",0.0249965947760203
+"Netherlands","Population_Near_Rapid_Transit",0.155671070317708
+"Netherlands","Population_Near_National_Highways",0.636690555728626
+"Netherlands","Population_Near_Cycling_Facilities",0.854467450821717
+"Netherlands","Population_Near_Sidewalks",0.754578900641347
+"Netherlands","Population_Near_Pedestrian_Bridges",0.853990121279651
+"Netherlands","Population_Density",9401.20238748299
+"Netherlands","Population_Near_Sustainable_Transport",0.152173509665548
+"Tunisia","Population_Near_Rapid_Transit",0.178769472346002
+"Tunisia","Population_Near_Fast_Transit",0.0194764301617748
+"Tunisia","Population_Near_National_Highways",0.544347745790162
+"Tunisia","Population_Near_Cycling_Facilities",0.193507074597945
+"Tunisia","Population_Near_Sidewalks",0.596451034355036
+"Tunisia","Population_Density",13622.115063415
+"Spain","Population_Near_Rapid_Transit",0.625840341210585
+"Spain","Population_Near_Fast_Transit",0.507044997915028
+"Spain","Population_Near_National_Highways",0.41663659358432
+"Spain","Population_Near_Cycling_Facilities",0.793809255186236
+"Spain","Population_Near_Sidewalks",0.858489063042163
+"Spain","Population_Near_Pedestrian_Bridges",0.484544864247249
+"Spain","Population_Density",24432.3709121571
+"Spain","Population_Near_Sustainable_Transport",0.269720562359606
+"Vatican City","Population_Near_Rapid_Transit",0.540242294050805
+"Vatican City","Population_Near_Fast_Transit",0.788294262847742
+"Vatican City","Population_Near_National_Highways",0.372744369336013
+"Vatican City","Population_Near_Cycling_Facilities",0.998462107525328
+"Vatican City","Population_Near_Sidewalks",0.930766668454965
+"Vatican City","Population_Near_Pedestrian_Bridges",0.116172282715347
+"Vatican City","Population_Density",4047.95694901918
+"Vatican City","Population_Near_Sustainable_Transport",0.116149744285267
+"Switzerland","Population_Near_Rapid_Transit",0.606773854252207
+"Switzerland","Population_Near_National_Highways",0.720689807770777
+"Switzerland","Population_Near_Cycling_Facilities",0.920195701836742
+"Switzerland","Population_Near_Sidewalks",0.864925716839564
+"Switzerland","Population_Near_Pedestrian_Bridges",0.360605653086846
+"Switzerland","Population_Density",9565.00122258076
+"Switzerland","Population_Near_Sustainable_Transport",0.282236670923328
+"Belgium","Population_Near_Rapid_Transit",0.0425752999742333
+"Belgium","Population_Near_Fast_Transit",0.658317378381607
+"Belgium","Population_Near_National_Highways",0.661958289390067
+"Belgium","Population_Near_Cycling_Facilities",0.709056829572068
+"Belgium","Population_Near_Sidewalks",0.811706545795851
+"Belgium","Population_Near_Pedestrian_Bridges",0.569505017674266
+"Belgium","Population_Density",12394.8084877881
+"Belgium","Population_Near_Sustainable_Transport",0.410282865106598
+"Albania","Population_Near_National_Highways",0.577917943975751
+"Albania","Population_Near_Cycling_Facilities",0.460572948963823
+"Albania","Population_Near_Sidewalks",0.740023784662972
+"Albania","Population_Near_Pedestrian_Bridges",0.261095618198126
+"Albania","Population_Density",19982.1739597842
+"Italy","Population_Near_Rapid_Transit",0.224872792361121
+"Italy","Population_Near_Fast_Transit",0.525442039911508
+"Italy","Population_Near_National_Highways",0.639254201084967
+"Italy","Population_Near_Cycling_Facilities",0.56802580188999
+"Italy","Population_Near_Sidewalks",0.743028734250019
+"Italy","Population_Near_Pedestrian_Bridges",0.285010756672336
+"Italy","Population_Density",21534.9167240794
+"Italy","Population_Near_Sustainable_Transport",0.0572504365874952
+"Bulgaria","Population_Near_Rapid_Transit",0.433415773190961
+"Bulgaria","Population_Near_National_Highways",0.629918693566054
+"Bulgaria","Population_Near_Cycling_Facilities",0.694151954459223
+"Bulgaria","Population_Near_Sidewalks",0.814958930932708
+"Bulgaria","Population_Near_Pedestrian_Bridges",0.166149851400482
+"Bulgaria","Population_Density",10722.3775513339
+"Bulgaria","Population_Near_Sustainable_Transport",0.109756438947726
+"Serbia","Population_Near_Fast_Transit",0.795497097253594
+"Serbia","Population_Near_National_Highways",0.705343031965811
+"Serbia","Population_Near_Cycling_Facilities",0.600210228298549
+"Serbia","Population_Near_Sidewalks",0.769522543895913
+"Serbia","Population_Near_Pedestrian_Bridges",0.163819203410016
+"Serbia","Population_Density",13371.4360356429
+"Serbia","Population_Near_Sustainable_Transport",0.157684326369697
+"Croatia","Population_Near_Fast_Transit",0.768784008604773
+"Croatia","Population_Near_National_Highways",0.758784537523652
+"Croatia","Population_Near_Cycling_Facilities",0.739395838742925
+"Croatia","Population_Near_Sidewalks",0.808919373422808
+"Croatia","Population_Near_Pedestrian_Bridges",0.371939202402729
+"Croatia","Population_Density",9564.61837423915
+"Croatia","Population_Near_Sustainable_Transport",0.34708596279135
+"Romania","Population_Near_Rapid_Transit",0.443273222898462
+"Romania","Population_Near_National_Highways",0.548812703890953
+"Romania","Population_Near_Cycling_Facilities",0.499119133518945
+"Romania","Population_Near_Sidewalks",0.841887721696835
+"Romania","Population_Near_Pedestrian_Bridges",0.0581277992387344
+"Romania","Population_Density",17370.5978539315
+"Romania","Population_Near_Sustainable_Transport",0.0372306529461461
+"Hungary","Population_Near_Rapid_Transit",0.274572514915826
+"Hungary","Population_Near_Fast_Transit",0.834206109300064
+"Hungary","Population_Near_National_Highways",0.783589949504257
+"Hungary","Population_Near_Cycling_Facilities",0.624384945460934
+"Hungary","Population_Near_Sidewalks",0.860527726560577
+"Hungary","Population_Near_Pedestrian_Bridges",0.228428678980685
+"Hungary","Population_Density",10652.2324717424
+"Austria","Population_Near_Rapid_Transit",0.545781287755416
+"Austria","Population_Near_Fast_Transit",0.84801533133153
+"Austria","Population_Near_National_Highways",0.730650285702072
+"Austria","Population_Near_Cycling_Facilities",0.844058935022655
+"Austria","Population_Near_Sidewalks",0.886607927143211
+"Austria","Population_Near_Pedestrian_Bridges",0.559759191775787
+"Austria","Population_Density",14231.0093049648
+"Czechia","Population_Near_Rapid_Transit",0.430446120003779
+"Czechia","Population_Near_Fast_Transit",0.887233278708239
+"Czechia","Population_Near_National_Highways",0.624114815085911
+"Czechia","Population_Near_Cycling_Facilities",0.911984380319588
+"Czechia","Population_Near_Sidewalks",0.857128133497856
+"Czechia","Population_Near_Pedestrian_Bridges",0.182416679987415
+"Czechia","Population_Density",10600.7907849465
+"Czechia","Population_Near_Sustainable_Transport",0.174359828621612
+"Poland","Population_Near_Rapid_Transit",0.120810743294417
+"Poland","Population_Near_Fast_Transit",0.660218559357939
+"Poland","Population_Near_National_Highways",0.647181764280407
+"Poland","Population_Near_Cycling_Facilities",0.828262546639669
+"Poland","Population_Near_Sidewalks",0.862940249286726
+"Poland","Population_Near_Pedestrian_Bridges",0.577331001913607
+"Poland","Population_Density",10169.7006493187
+"Poland","Population_Near_Sustainable_Transport",0.176753788353476
+"Belarus","Population_Near_Rapid_Transit",0.271280772179037
+"Belarus","Population_Near_National_Highways",0.561547752420413
+"Belarus","Population_Near_Cycling_Facilities",0.820237650109758
+"Belarus","Population_Near_Sidewalks",0.854505833803357
+"Belarus","Population_Near_Pedestrian_Bridges",0.0973289660940255
+"Belarus","Population_Density",18502.1544352841
+"Belarus","Population_Near_Sustainable_Transport",0.0662115794506439
+"Australia","Population_Near_Rapid_Transit",0.111088519336001
+"Australia","Population_Near_Fast_Transit",0.282342067256105
+"Australia","Population_Near_National_Highways",0.68457155910243
+"Australia","Population_Near_Cycling_Facilities",0.623092544770195
+"Australia","Population_Near_Sidewalks",0.550254782110577
+"Australia","Population_Near_Pedestrian_Bridges",0.342647365501362
+"Australia","Population_Density",7071.91072937345
+"Australia","Population_Near_Sustainable_Transport",0.099634770464234
+"Indonesia","Population_Near_Rapid_Transit",0.0209743747883939
+"Indonesia","Population_Near_Fast_Transit",0.018859108691616
+"Indonesia","Population_Near_National_Highways",0.718743784619214
+"Indonesia","Population_Near_Cycling_Facilities",0.12520417647871
+"Indonesia","Population_Near_Sidewalks",0.403300296936396
+"Indonesia","Population_Near_Pedestrian_Bridges",0.00197456018906501
+"Indonesia","Population_Density",17374.219230427
+"Indonesia","Population_Near_Sustainable_Transport",0.000751086875459972
+"Singapore","Population_Near_Rapid_Transit",0.476965146590157
+"Singapore","Population_Near_Fast_Transit",0.264056939091396
+"Singapore","Population_Near_National_Highways",0.173033513722502
+"Singapore","Population_Near_Cycling_Facilities",0.911727918636295
+"Singapore","Population_Near_Sidewalks",0.773988503976796
+"Singapore","Population_Near_Pedestrian_Bridges",0.453674463653473
+"Singapore","Population_Density",59336.7355005966
+"Singapore","Population_Near_Sustainable_Transport",0.279033323653848
+"Malaysia","Population_Near_Rapid_Transit",0.00956870715639731
+"Malaysia","Population_Near_Fast_Transit",0.000505064201013092
+"Malaysia","Population_Near_National_Highways",0.334519297713342
+"Malaysia","Population_Near_Cycling_Facilities",0.28674266407658
+"Malaysia","Population_Near_Sidewalks",0.349404219938076
+"Malaysia","Population_Near_Pedestrian_Bridges",0.0146969576404501
+"Malaysia","Population_Density",13193.3494241694
+"Malaysia","Population_Near_Sustainable_Transport",0.00102971096566689
+"South Africa","Population_Near_National_Highways",0.790507369125327
+"South Africa","Population_Near_Cycling_Facilities",0.269168633031403
+"South Africa","Population_Near_Sidewalks",0.218056058544795
+"South Africa","Population_Near_Pedestrian_Bridges",0.00714428165407367
+"South Africa","Population_Density",19441.241719427
+"Zimbabwe","Population_Near_National_Highways",0.957165387342488
+"Zimbabwe","Population_Near_Cycling_Facilities",0.135660041507217
+"Zimbabwe","Population_Near_Sidewalks",0.220358245287091
+"Zimbabwe","Population_Near_Pedestrian_Bridges",0.00962376954415359
+"Zimbabwe","Population_Density",7386.63700525524
+"Zambia","Population_Near_National_Highways",0.855706904381278
+"Zambia","Population_Near_Cycling_Facilities",0.104868878231263
+"Zambia","Population_Near_Sidewalks",0.284145001656102
+"Zambia","Population_Density",19594.3297746151
+"Angola","Population_Near_National_Highways",0.763847821967698
+"Angola","Population_Near_Cycling_Facilities",0.0580156716119014
+"Angola","Population_Near_Sidewalks",0.160552902596316
+"Angola","Population_Density",26181.2422502319
+"Congo - Kinshasa","Population_Near_National_Highways",0.950202680476883
+"Congo - Kinshasa","Population_Near_Cycling_Facilities",0.0960856867374063
+"Congo - Kinshasa","Population_Near_Sidewalks",0.530132245651696
+"Congo - Kinshasa","Population_Density",49652.5065942509
+"Burundi","Population_Near_National_Highways",0.994652951821041
+"Burundi","Population_Near_Cycling_Facilities",0.153695280839354
+"Burundi","Population_Near_Sidewalks",0.559519124143629
+"Burundi","Population_Density",33102.1471186425
+"Rwanda","Population_Near_Fast_Transit",0.0104824517713323
+"Rwanda","Population_Near_National_Highways",0.875129987859586
+"Rwanda","Population_Near_Cycling_Facilities",0.271936678763514
+"Rwanda","Population_Near_Sidewalks",0.247634937741885
+"Rwanda","Population_Near_Pedestrian_Bridges",0.00086899866640176
+"Rwanda","Population_Density",14597.5362896314
+"Madagascar","Population_Near_National_Highways",0.904559559917987
+"Madagascar","Population_Near_Cycling_Facilities",0.385758174887621
+"Madagascar","Population_Near_Sidewalks",0.45988577848833
+"Madagascar","Population_Near_Pedestrian_Bridges",0.00130906999635768
+"Madagascar","Population_Density",61858.0692159648
+"Mozambique","Population_Near_National_Highways",0.842314365089318
+"Mozambique","Population_Near_Cycling_Facilities",0.0681728391749388
+"Mozambique","Population_Near_Sidewalks",0.169268080380315
+"Mozambique","Population_Density",14832.9167663882
+"Mauritius","Population_Near_Rapid_Transit",0.0856517941586532
+"Mauritius","Population_Near_National_Highways",0.842108822595493
+"Mauritius","Population_Near_Cycling_Facilities",0.0664990905064645
+"Mauritius","Population_Near_Sidewalks",0.597743844492231
+"Mauritius","Population_Density",9094.39016924162
+"Malawi","Population_Near_National_Highways",0.968261965612887
+"Malawi","Population_Near_Cycling_Facilities",0.301727117895985
+"Malawi","Population_Near_Sidewalks",0.0920963158002254
+"Malawi","Population_Density",23168.144540216
+"Tanzania","Population_Near_National_Highways",0.802191151494243
+"Tanzania","Population_Near_Cycling_Facilities",0.453964095709683
+"Tanzania","Population_Near_Sidewalks",0.565747090850756
+"Tanzania","Population_Near_Pedestrian_Bridges",0.0691890310437792
+"Tanzania","Population_Density",28020.7022849719
+"Kenya","Population_Near_Fast_Transit",0.0124959916433728
+"Kenya","Population_Near_National_Highways",0.648583086073813
+"Kenya","Population_Near_Cycling_Facilities",0.188162004240297
+"Kenya","Population_Near_Sidewalks",0.484255595881808
+"Kenya","Population_Near_Pedestrian_Bridges",0.00258589827093737
+"Kenya","Population_Density",57268.0126503068
+"Kenya","Population_Near_Sustainable_Transport",0.000163750410070092
+"Uganda","Population_Near_National_Highways",0.871009122550887
+"Uganda","Population_Near_Cycling_Facilities",0.154393311916619
+"Uganda","Population_Near_Sidewalks",0.522664920639156
+"Uganda","Population_Density",12776.889780631
+"Sri Lanka","Population_Near_National_Highways",0.832381515474161
+"Sri Lanka","Population_Near_Cycling_Facilities",0.089039153610276
+"Sri Lanka","Population_Near_Sidewalks",0.326353446144037
+"Sri Lanka","Population_Density",10934.5897239452
+"Cambodia","Population_Near_National_Highways",0.793429958441646
+"Cambodia","Population_Near_Cycling_Facilities",0.155750223927306
+"Cambodia","Population_Near_Sidewalks",0.617120965480349
+"Cambodia","Population_Near_Pedestrian_Bridges",0.00672432503378012
+"Cambodia","Population_Density",22747.8375262862
+"Philippines","Population_Near_National_Highways",0.790227533417011
+"Philippines","Population_Near_Cycling_Facilities",0.282657851334371
+"Philippines","Population_Near_Sidewalks",0.654447466466008
+"Philippines","Population_Near_Pedestrian_Bridges",0.00567164940639529
+"Philippines","Population_Density",58397.9831127251
+"Thailand","Population_Near_Rapid_Transit",0.0782609186678743
+"Thailand","Population_Near_Fast_Transit",0.000223509900581045
+"Thailand","Population_Near_National_Highways",0.462030163100789
+"Thailand","Population_Near_Cycling_Facilities",0.168216685806469
+"Thailand","Population_Near_Sidewalks",0.178741551775299
+"Thailand","Population_Near_Pedestrian_Bridges",0.0180259735327251
+"Thailand","Population_Density",16293.8887998145
+"Thailand","Population_Near_Sustainable_Transport",0.00163374286131614
+"Vietnam","Population_Near_Rapid_Transit",0.0049784292539149
+"Vietnam","Population_Near_National_Highways",0.60315864811341
+"Vietnam","Population_Near_Cycling_Facilities",0.129091506334109
+"Vietnam","Population_Near_Sidewalks",0.494712104563238
+"Vietnam","Population_Near_Pedestrian_Bridges",0.00298222010035441
+"Vietnam","Population_Density",29139.5973362895
+"Somalia","Population_Near_National_Highways",0.904705459675717
+"Somalia","Population_Near_Cycling_Facilities",0.0744974289751949
+"Somalia","Population_Near_Sidewalks",0.15895313129415
+"Somalia","Population_Density",57766.6212895887
+"Ethiopia","Population_Near_Rapid_Transit",0.154409759280099
+"Ethiopia","Population_Near_Fast_Transit",0.168659980206773
+"Ethiopia","Population_Near_National_Highways",0.39225025983101
+"Ethiopia","Population_Near_Cycling_Facilities",0.0871725618621012
+"Ethiopia","Population_Near_Sidewalks",0.570787176194891
+"Ethiopia","Population_Density",36615.8362957447
+"Djibouti","Population_Near_National_Highways",0.822964701788348
+"Djibouti","Population_Near_Cycling_Facilities",0.148821037132455
+"Djibouti","Population_Near_Sidewalks",0.677957155785806
+"Djibouti","Population_Density",28154.5111881418
+"Yemen","Population_Near_National_Highways",0.360372804258738
+"Yemen","Population_Near_Cycling_Facilities",0.0326940743183308
+"Yemen","Population_Near_Sidewalks",0.61344300611669
+"Yemen","Population_Density",48091.1124851815
+"Oman","Population_Near_National_Highways",0.326048182617307
+"Oman","Population_Near_Cycling_Facilities",0.0973076990977956
+"Oman","Population_Near_Sidewalks",0.367933946129872
+"Oman","Population_Density",11762.0254346708
+"Saudi Arabia","Population_Near_Rapid_Transit",1.5346428887549e-05
+"Saudi Arabia","Population_Near_National_Highways",0.257464954108708
+"Saudi Arabia","Population_Near_Cycling_Facilities",0.0629678607827704
+"Saudi Arabia","Population_Near_Sidewalks",0.139486777438699
+"Saudi Arabia","Population_Density",13839.2467017883
+"United Arab Emirates","Population_Near_Rapid_Transit",0.0714782710106247
+"United Arab Emirates","Population_Near_Fast_Transit",0.267462732350318
+"United Arab Emirates","Population_Near_National_Highways",0.212272292575291
+"United Arab Emirates","Population_Near_Cycling_Facilities",0.45829803077552
+"United Arab Emirates","Population_Near_Sidewalks",0.31783007359073
+"United Arab Emirates","Population_Near_Pedestrian_Bridges",0.0242345950118012
+"United Arab Emirates","Population_Density",13853.0358754187
+"United Arab Emirates","Population_Near_Sustainable_Transport",0.0128283484379159
+"Qatar","Population_Near_Rapid_Transit",0.0990506867471675
+"Qatar","Population_Near_National_Highways",0.304758442002156
+"Qatar","Population_Near_Cycling_Facilities",0.224860454096923
+"Qatar","Population_Near_Sidewalks",0.278410796049506
+"Qatar","Population_Near_Pedestrian_Bridges",0.0488398055591467
+"Qatar","Population_Density",16156.6632789385
+"Qatar","Population_Near_Sustainable_Transport",0.00342374851996328
+"Congo - Brazzaville","Population_Near_National_Highways",0.827651571644907
+"Congo - Brazzaville","Population_Near_Cycling_Facilities",0.0854994389144822
+"Congo - Brazzaville","Population_Near_Sidewalks",0.636550407276101
+"Congo - Brazzaville","Population_Density",50540.655354453
+"Central African Republic","Population_Near_National_Highways",0.994844507404945
+"Central African Republic","Population_Near_Cycling_Facilities",0.037987910099984
+"Central African Republic","Population_Near_Sidewalks",0.39509576176012
+"Central African Republic","Population_Density",28115.0797730711
+"South Sudan","Population_Near_National_Highways",1
+"South Sudan","Population_Near_Cycling_Facilities",0.810355226986928
+"South Sudan","Population_Density",130762.466069302
+"Chad","Population_Near_National_Highways",0.704162272877721
+"Chad","Population_Near_Cycling_Facilities",0.0287750239599252
+"Chad","Population_Near_Sidewalks",0.431353370486791
+"Chad","Population_Density",15136.9357638376
+"Sudan","Population_Near_National_Highways",0.832884835722006
+"Sudan","Population_Near_Cycling_Facilities",0.0159143277735487
+"Sudan","Population_Near_Sidewalks",0.285943575216315
+"Sudan","Population_Density",18270.0969663811
+"Libya","Population_Near_National_Highways",0.383573117704513
+"Libya","Population_Near_Cycling_Facilities",0.0687757829597627
+"Libya","Population_Near_Sidewalks",0.573818382006178
+"Libya","Population_Density",5395.92297032243
+"Egypt","Population_Near_Rapid_Transit",0.0834463979203105
+"Egypt","Population_Near_Fast_Transit",0.428988177122067
+"Egypt","Population_Near_National_Highways",0.396779708048537
+"Egypt","Population_Near_Cycling_Facilities",0.167727958847535
+"Egypt","Population_Near_Sidewalks",0.200962599999932
+"Egypt","Population_Density",66892.9709645869
+"Greece","Population_Near_Rapid_Transit",0.223624247779324
+"Greece","Population_Near_Fast_Transit",0.604140550686122
+"Greece","Population_Near_National_Highways",0.673542814718788
+"Greece","Population_Near_Cycling_Facilities",0.603956600338045
+"Greece","Population_Near_Sidewalks",0.918138155542191
+"Greece","Population_Near_Pedestrian_Bridges",0.0623920954494636
+"Greece","Population_Density",16032.6900013003
+"Myanmar (Burma)","Population_Near_National_Highways",0.838309220795488
+"Myanmar (Burma)","Population_Near_Cycling_Facilities",0.0800125374472866
+"Myanmar (Burma)","Population_Near_Sidewalks",0.646731481750369
+"Myanmar (Burma)","Population_Density",26815.6880038028
+"India","Population_Near_Rapid_Transit",0.0396956244490506
+"India","Population_Near_Fast_Transit",0.0853464634739458
+"India","Population_Near_National_Highways",0.672297199084046
+"India","Population_Near_Cycling_Facilities",0.11942353748373
+"India","Population_Near_Sidewalks",0.34954449059777
+"India","Population_Near_Pedestrian_Bridges",0.00274606469009181
+"India","Population_Density",41719.0713220083
+"India","Population_Near_Sustainable_Transport",0.00043006684263473
+"Taiwan","Population_Near_Rapid_Transit",0.213448116536868
+"Taiwan","Population_Near_Fast_Transit",0.110774722559344
+"Taiwan","Population_Near_National_Highways",0.635198334055033
+"Taiwan","Population_Near_Cycling_Facilities",0.477133182612202
+"Taiwan","Population_Near_Sidewalks",0.679085382120415
+"Taiwan","Population_Near_Pedestrian_Bridges",0.127620331450993
+"Taiwan","Population_Density",27054.1756617898
+"Taiwan","Population_Near_Sustainable_Transport",0.0490120103084528
+"Bangladesh","Population_Near_Rapid_Transit",0.0166982251668793
+"Bangladesh","Population_Near_National_Highways",0.730163482414864
+"Bangladesh","Population_Near_Cycling_Facilities",0.111215374278693
+"Bangladesh","Population_Near_Sidewalks",0.314114628114169
+"Bangladesh","Population_Density",55587.9912989696
+"Nepal","Population_Near_National_Highways",0.916961450755541
+"Nepal","Population_Near_Cycling_Facilities",0.440378838092019
+"Nepal","Population_Near_Sidewalks",0.772019440562469
+"Nepal","Population_Density",33671.9758493454
+"Bahrain","Population_Near_National_Highways",0.28019277473179
+"Bahrain","Population_Near_Cycling_Facilities",0.310707704029622
+"Bahrain","Population_Near_Sidewalks",0.592087649107913
+"Bahrain","Population_Density",22993.8035018157
+"Kuwait","Population_Near_National_Highways",0.100765589830912
+"Kuwait","Population_Near_Cycling_Facilities",0.393040772807709
+"Kuwait","Population_Near_Sidewalks",0.306409558281192
+"Kuwait","Population_Density",17695.6925645011
+"Pakistan","Population_Near_Rapid_Transit",0.0119274974701703
+"Pakistan","Population_Near_National_Highways",0.49437464538509
+"Pakistan","Population_Near_Cycling_Facilities",0.10555031644168
+"Pakistan","Population_Near_Sidewalks",0.372472214502573
+"Pakistan","Population_Near_Pedestrian_Bridges",9.44015005144053e-07
+"Pakistan","Population_Density",41322.7236575691
+"Jordan","Population_Near_National_Highways",0.295675109202351
+"Jordan","Population_Near_Cycling_Facilities",0.0834355972440277
+"Jordan","Population_Near_Sidewalks",0.322501269787633
+"Jordan","Population_Density",28746.8850547275
+"Israel","Population_Near_Rapid_Transit",0.154852792104284
+"Israel","Population_Near_Fast_Transit",0.848424500171644
+"Israel","Population_Near_National_Highways",0.567940400405785
+"Israel","Population_Near_Cycling_Facilities",0.81347546484612
+"Israel","Population_Near_Sidewalks",0.729354943570465
+"Israel","Population_Near_Pedestrian_Bridges",0.29981373084462
+"Israel","Population_Density",21346.5819188599
+"Iran","Population_Near_Rapid_Transit",0.100393401260297
+"Iran","Population_Near_National_Highways",0.180312339823779
+"Iran","Population_Near_Cycling_Facilities",0.355265597642874
+"Iran","Population_Near_Sidewalks",0.57215382742621
+"Iran","Population_Near_Pedestrian_Bridges",0.0142057471634491
+"Iran","Population_Density",58482.3747928216
+"Iran","Population_Near_Sustainable_Transport",0.00901709197316069
+"Iraq","Population_Near_National_Highways",0.330542142962225
+"Iraq","Population_Near_Cycling_Facilities",0.104725496802948
+"Iraq","Population_Near_Sidewalks",0.671190010433588
+"Iraq","Population_Density",23451.506254038
+"Japan","Population_Near_Rapid_Transit",0.150669203971354
+"Japan","Population_Near_Fast_Transit",0.00305757328058087
+"Japan","Population_Near_National_Highways",0.741829318075139
+"Japan","Population_Near_Cycling_Facilities",0.529259704659346
+"Japan","Population_Near_Sidewalks",0.814436691380303
+"Japan","Population_Near_Pedestrian_Bridges",0.0379253307534549
+"Japan","Population_Density",10231.6717510394
+"Japan","Population_Near_Sustainable_Transport",0.00560390589991532
+"China","Population_Near_Rapid_Transit",0.17931766676874
+"China","Population_Near_Fast_Transit",0.0338605311092035
+"China","Population_Near_National_Highways",0.351750472085109
+"China","Population_Near_Cycling_Facilities",0.170497878091156
+"China","Population_Near_Sidewalks",0.200721450245853
+"China","Population_Near_Pedestrian_Bridges",0.0392417498896522
+"China","Population_Density",47106.47932539
+"China","Population_Near_Sustainable_Transport",0.0172682058538576
+"South Korea","Population_Near_Rapid_Transit",0.392664259138325
+"South Korea","Population_Near_National_Highways",0.574727691288477
+"South Korea","Population_Near_Cycling_Facilities",0.472868626819418
+"South Korea","Population_Near_Sidewalks",0.719457989394467
+"South Korea","Population_Near_Pedestrian_Bridges",0.139340156375463
+"South Korea","Population_Density",25698.083798417
+"South Korea","Population_Near_Sustainable_Transport",0.0641347947309758
+"North Korea","Population_Near_Rapid_Transit",0.0982414088693061
+"North Korea","Population_Near_National_Highways",0.777115659199249
+"North Korea","Population_Near_Cycling_Facilities",0.261610207840572
+"North Korea","Population_Near_Sidewalks",0.140269700151172
+"North Korea","Population_Near_Pedestrian_Bridges",0.000575784159094676
+"North Korea","Population_Density",31851.0923648787
+"Lebanon","Population_Near_National_Highways",0.298329367420304
+"Lebanon","Population_Near_Cycling_Facilities",0.183507966770125
+"Lebanon","Population_Near_Sidewalks",0.722130733657453
+"Lebanon","Population_Density",26646.9798315542
+"Afghanistan","Population_Near_National_Highways",0.531397982418317
+"Afghanistan","Population_Near_Cycling_Facilities",0.0703288456136122
+"Afghanistan","Population_Near_Sidewalks",0.230072789942036
+"Afghanistan","Population_Density",34796.8064444587
+"Syria","Population_Near_National_Highways",0.32468883108845
+"Syria","Population_Near_Cycling_Facilities",0.21380204301546
+"Syria","Population_Near_Sidewalks",0.640327492358526
+"Syria","Population_Density",30576.0003502998
+"Tajikistan","Population_Near_National_Highways",0.551081897924182
+"Tajikistan","Population_Near_Cycling_Facilities",0.213433201553237
+"Tajikistan","Population_Near_Sidewalks",0.579541553709585
+"Tajikistan","Population_Density",22217.6508952896
+"Turkey","Population_Near_Rapid_Transit",0.23663637104762
+"Turkey","Population_Near_Fast_Transit",0.173607554403397
+"Turkey","Population_Near_National_Highways",0.352036262871171
+"Turkey","Population_Near_Cycling_Facilities",0.362047805295047
+"Turkey","Population_Near_Sidewalks",0.779077903817681
+"Turkey","Population_Near_Pedestrian_Bridges",0.0190226236440502
+"Turkey","Population_Density",34087.5295715675
+"Turkey","Population_Near_Sustainable_Transport",0.00318880649867497
+"Turkmenistan","Population_Near_National_Highways",0.227187698864558
+"Turkmenistan","Population_Near_Cycling_Facilities",0.284739018678163
+"Turkmenistan","Population_Near_Sidewalks",0.61593074966149
+"Turkmenistan","Population_Density",17633.2124109508
+"Armenia","Population_Near_Rapid_Transit",0.145237397712662
+"Armenia","Population_Near_National_Highways",0.446083688010699
+"Armenia","Population_Near_Cycling_Facilities",0.405907928520263
+"Armenia","Population_Near_Sidewalks",0.73735862976237
+"Armenia","Population_Density",11181.5801223017
+"Azerbaijan","Population_Near_Rapid_Transit",0.15770854362442
+"Azerbaijan","Population_Near_National_Highways",0.556604051789328
+"Azerbaijan","Population_Near_Cycling_Facilities",0.361156125109482
+"Azerbaijan","Population_Near_Sidewalks",0.68555033386301
+"Azerbaijan","Population_Near_Pedestrian_Bridges",0.0128548122502255
+"Azerbaijan","Population_Density",13872.0313770993
+"Azerbaijan","Population_Near_Sustainable_Transport",0.0100213936715441
+"Kyrgyzstan","Population_Near_National_Highways",0.894600095729627
+"Kyrgyzstan","Population_Near_Cycling_Facilities",0.476492030077688
+"Kyrgyzstan","Population_Near_Sidewalks",0.806193109277054
+"Kyrgyzstan","Population_Density",26087.6009744687
+"Uzbekistan","Population_Near_Rapid_Transit",0.0429285907596657
+"Uzbekistan","Population_Near_National_Highways",0.646573055736803
+"Uzbekistan","Population_Near_Cycling_Facilities",0.0920703500423405
+"Uzbekistan","Population_Near_Sidewalks",0.379517312127354
+"Uzbekistan","Population_Near_Pedestrian_Bridges",0.00327096865626151
+"Uzbekistan","Population_Density",26015.5234565587
+"Uzbekistan","Population_Near_Sustainable_Transport",0.00137923357856744
+"Georgia","Population_Near_Rapid_Transit",0.348034576899606
+"Georgia","Population_Near_National_Highways",0.503041169709668
+"Georgia","Population_Near_Cycling_Facilities",0.675036603787877
+"Georgia","Population_Near_Sidewalks",0.821326008186638
+"Georgia","Population_Near_Pedestrian_Bridges",0.0748531589281419
+"Georgia","Population_Density",16178.7345332437
+"Georgia","Population_Near_Sustainable_Transport",0.0401835176449867
+"Kazakhstan","Population_Near_Rapid_Transit",0.042579022866753
+"Kazakhstan","Population_Near_National_Highways",0.631450575645658
+"Kazakhstan","Population_Near_Cycling_Facilities",0.247628987148504
+"Kazakhstan","Population_Near_Sidewalks",0.557596004965415
+"Kazakhstan","Population_Near_Pedestrian_Bridges",0.0468935076942915
+"Kazakhstan","Population_Density",12577.4340782159
+"Kazakhstan","Population_Near_Sustainable_Transport",0.00222254682370095
+"Ukraine","Population_Near_Rapid_Transit",0.16103305830581
+"Ukraine","Population_Near_National_Highways",0.732078188540825
+"Ukraine","Population_Near_Cycling_Facilities",0.577239067263779
+"Ukraine","Population_Near_Sidewalks",0.745868110199611
+"Ukraine","Population_Near_Pedestrian_Bridges",0.0680814554676563
+"Ukraine","Population_Density",12017.7892653892
+"Ukraine","Population_Near_Sustainable_Transport",0.0152555538930188
+"Mongolia","Population_Near_National_Highways",0.71819886211416
+"Mongolia","Population_Near_Cycling_Facilities",0.270763246703831
+"Mongolia","Population_Near_Sidewalks",0.52451907923409
+"Mongolia","Population_Near_Pedestrian_Bridges",0.0355336891286988
+"Mongolia","Population_Density",12803.7941115998
+"Portugal","Population_Near_Rapid_Transit",0.267296321394883
+"Portugal","Population_Near_Fast_Transit",0.521404668762638
+"Portugal","Population_Near_National_Highways",0.393314381356744
+"Portugal","Population_Near_Cycling_Facilities",0.691117911751534
+"Portugal","Population_Near_Sidewalks",0.819243045066902
+"Portugal","Population_Near_Pedestrian_Bridges",0.12937010095508
+"Portugal","Population_Density",19584.5846172673
+"Portugal","Population_Near_Sustainable_Transport",0.00589352379052171
+"Canada","Population_Near_Rapid_Transit",0.16240341494108
+"Canada","Population_Near_Fast_Transit",0.499818120102865
+"Canada","Population_Near_National_Highways",0.736164187641437
+"Canada","Population_Near_Cycling_Facilities",0.605681757562851
+"Canada","Population_Near_Sidewalks",0.668585477486028
+"Canada","Population_Near_Pedestrian_Bridges",0.336492680853821
+"Canada","Population_Density",12178.4797158166
+"Canada","Population_Near_Sustainable_Transport",0.20312168330972
+"Germany","Population_Near_Rapid_Transit",0.383411177168009
+"Germany","Population_Near_Fast_Transit",0.455189410426085
+"Germany","Population_Near_National_Highways",0.726271863394214
+"Germany","Population_Near_Cycling_Facilities",0.829375843963153
+"Germany","Population_Near_Sidewalks",0.831859986144643
+"Germany","Population_Near_Pedestrian_Bridges",0.623419825569228
+"Germany","Population_Density",8434.66520045436
+"Germany","Population_Near_Sustainable_Transport",0.371956378611905
+"Ireland","Population_Near_Rapid_Transit",0.100111994163541
+"Ireland","Population_Near_Fast_Transit",0.635244940551493
+"Ireland","Population_Near_National_Highways",0.748679683367909
+"Ireland","Population_Near_Cycling_Facilities",0.798655057441087
+"Ireland","Population_Near_Sidewalks",0.884000069623814
+"Ireland","Population_Near_Pedestrian_Bridges",0.345875406798438
+"Ireland","Population_Density",10131.8181315116
+"Ireland","Population_Near_Sustainable_Transport",0.223657887919051
+"Denmark","Population_Near_Rapid_Transit",0.605470791444928
+"Denmark","Population_Near_Fast_Transit",0.740539356324555
+"Denmark","Population_Near_National_Highways",0.855349231629459
+"Denmark","Population_Near_Cycling_Facilities",0.853133036453446
+"Denmark","Population_Near_Sidewalks",0.760945433839205
+"Denmark","Population_Near_Pedestrian_Bridges",0.935322160102379
+"Denmark","Population_Density",13669.9687611017
+"Denmark","Population_Near_Sustainable_Transport",0.785540552027179
+"Russia","Population_Near_Rapid_Transit",0.204497682633553
+"Russia","Population_Near_National_Highways",0.570282059315661
+"Russia","Population_Near_Cycling_Facilities",0.671148238840641
+"Russia","Population_Near_Sidewalks",0.806358385790739
+"Russia","Population_Near_Pedestrian_Bridges",0.0416101929045098
+"Russia","Population_Density",18211.0845113227
+"Russia","Population_Near_Sustainable_Transport",0.0165263610645074
+"Latvia","Population_Near_Fast_Transit",0.0130080168894934
+"Latvia","Population_Near_National_Highways",0.637705919509929
+"Latvia","Population_Near_Cycling_Facilities",0.803237420655207
+"Latvia","Population_Near_Sidewalks",0.840680779137358
+"Latvia","Population_Near_Pedestrian_Bridges",0.344054307040787
+"Latvia","Population_Density",8788.67565183086
+"Latvia","Population_Near_Sustainable_Transport",0.0107147478416766
+"Sweden","Population_Near_Rapid_Transit",0.374237196950318
+"Sweden","Population_Near_Fast_Transit",0.529291146608791
+"Sweden","Population_Near_National_Highways",0.517231380709483
+"Sweden","Population_Near_Cycling_Facilities",0.919675696733332
+"Sweden","Population_Near_Sidewalks",0.733573704449571
+"Sweden","Population_Near_Pedestrian_Bridges",0.894850075394024
+"Sweden","Population_Density",13152.6436932492
+"Finland","Population_Near_Rapid_Transit",0.289308315155803
+"Finland","Population_Near_Fast_Transit",0.7906836544842
+"Finland","Population_Near_National_Highways",0.5915147818482
+"Finland","Population_Near_Cycling_Facilities",0.959054318616647
+"Finland","Population_Near_Sidewalks",0.666689897425387
+"Finland","Population_Near_Pedestrian_Bridges",0.9664031127953
+"Finland","Population_Density",8799.60788222672
+"Finland","Population_Near_Sustainable_Transport",0.810458600300072
