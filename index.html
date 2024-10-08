@@ -4,37 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Urban Population Growth and Transit Access</title>
+  
   <!-- Include Vega and Vega-Lite libraries -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
-  <!-- Add some basic CSS for layout and text styling -->
-  <style>
-    /* Container for the visualizations */
-    .visualization-container {
-      display: flex;
-      justify-content: space-around;
-      margin-bottom: 20px;
-      flex-wrap: wrap; /* Allow wrapping for responsive layout */
-    }
-
-    /* Styling for each visualization box */
-    .vis-box {
-      width: 45%; /* Adjust width for two columns */
-      margin-bottom: 40px;
-    }
-
-    /* Text content styling */
-    h1, h2, p {
-      text-align: center;
-    }
-
-    p {
-      max-width: 800px;
-      margin: 20px auto;
-    }
-  </style>
+  <!-- Link the external CSS file -->
+  <link rel="stylesheet" href="dashboard-styles.css">
 </head>
 <body>
   <h1>Exploring Urban Growth and Transit Access Over Time</h1>
@@ -43,7 +20,7 @@
     In this visualization, we explore how urban population density and access to rapid transit systems have evolved across different countries over the years. The visualizations below provide insights into how the number of people living near rapid transit systems has grown in tandem with increasing urbanization.
   </p>
 
-  <!-- Container for all visualizations -->
+  <!-- Container for all three visualizations -->
   <div class="visualization-container">
     <!-- Container for the Map Visualization -->
     <div class="vis-box">
@@ -71,12 +48,14 @@
       </p>
       <div id="bubble-vis"></div>
     </div>
-    
-    <!-- Container for the Violin Plot -->
+  </div>
+
+  <!-- Container for the Violin Plot -->
+  <div class="visualization-container">
     <div class="vis-box">
-      <h2>Violin Plot of Ridership Distribution</h2>
+      <h2>Violin Plot of People Near Rapid Transit by Country</h2>
       <p>
-        This violin plot shows the distribution of people near rapid transit systems across selected countries. The points represent individual data values, and the blue area shows the distribution density.
+        Select the countries below to compare their distribution of people near rapid transit systems.
       </p>
       <div id="violin-vis"></div>
     </div>
@@ -111,12 +90,12 @@
         console.error("Error loading the Bubble chart visualization:", error);
       });
 
-    // Load the Violin plot visualization from your GitHub repository
+    // Load the Violin Plot visualization from your GitHub repository
     vegaEmbed('#violin-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(3).json')
       .then(function(result) {
-        console.log("Violin plot loaded successfully!");
+        console.log("Violin Plot visualization loaded successfully!");
       }).catch(function(error) {
-        console.error("Error loading the Violin plot:", error);
+        console.error("Error loading the Violin Plot visualization:", error);
       });
   </script>
 </body>
