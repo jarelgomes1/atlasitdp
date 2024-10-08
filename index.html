@@ -12,6 +12,19 @@
 
   <!-- Link the external CSS file -->
   <link rel="stylesheet" href="dashboard-styles.css">
+
+  <style>
+    .map-container {
+      width: 600px;
+      overflow: hidden;
+    }
+
+    .line-container {
+      width: 600px;
+      overflow: hidden;
+      transform: translateX(-600px); /* Shift the view to the line chart area */
+    }
+  </style>
 </head>
 <body>
   <h1>Exploring Urban Growth and Transit Access Over Time</h1>
@@ -20,10 +33,11 @@
     In this visualization, we explore how urban population density and access to rapid transit systems have evolved across different countries over the years. The visualizations below provide insights into how the number of people living near rapid transit systems has grown in tandem with increasing urbanization.
   </p>
 
-  <!-- Full-width row for Map/Line chart -->
+  <!-- Full-width row for Map and Line chart -->
   <div class="visualization-full-container" style="display: flex;">
-    <div class="vis-box" style="width: 50%;">
-      <h2>World Population Density and Rapid Transit Access</h2>
+    <!-- Map Container -->
+    <div class="map-container">
+      <h2>World Population Density and Rapid Transit Access (Map)</h2>
       <p>
         This map shows how different countries' urban population density has changed over the years and how many people now have access to rapid transit systems.
       </p>
@@ -31,8 +45,8 @@
     </div>
 
     <!-- Line chart section (on the right) -->
-    <div class="vis-box" style="width: 50%;">
-      <h2>People Near Rapid Transit Over Time</h2>
+    <div class="line-container">
+      <h2>People Near Rapid Transit Over Time (Line Chart)</h2>
       <p>
         This line chart shows the change in population density and access to rapid transit systems for selected countries over time.
       </p>
@@ -43,7 +57,7 @@
   <!-- Second row with two visualizations: Bubble chart and Heatmap -->
   <div class="visualization-container">
     <!-- Container for the Bubble Chart -->
-    <div class="vis-box" style="width: 48%;">
+    <div class="vis-box" style="width: 55%;">
       <h2>Population Near Rapid Transit by Year</h2>
       <p>
         This bubble chart highlights the proportion of people living near rapid transit systems in each country for a selected year. The size of each bubble represents the country's population density, and you can follow trends over time using the slider or autoplay feature.
@@ -52,7 +66,7 @@
     </div>
 
     <!-- Container for the Heatmap -->
-    <div class="vis-box scrollable-vis" style="width: 48%;">
+    <div class="vis-box scrollable-vis" style="width: 55%;">
       <h2>Heatmap of Population Near Transit Over Time</h2>
       <p>
         This heatmap shows the distribution of people living near rapid transit systems by country and year. The intensity of the color reflects the proportion of the population with access.
@@ -77,20 +91,12 @@
   </p>
 
   <script type="text/javascript">
-    // Load the Map visualization from your GitHub repository
+    // Load the combined Map/Line chart visualization from your GitHub repository
     vegaEmbed('#map-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vg.json')
       .then(function(result) {
-        console.log("Map visualization loaded successfully!");
+        console.log("Map and Line chart visualization loaded successfully!");
       }).catch(function(error) {
-        console.error("Error loading the Map visualization:", error);
-      });
-
-    // Load the Line Chart visualization from your GitHub repository
-    vegaEmbed('#line-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vg.json')
-      .then(function(result) {
-        console.log("Line chart visualization loaded successfully!");
-      }).catch(function(error) {
-        console.error("Error loading the Line chart visualization:", error);
+        console.error("Error loading the Map/Line chart visualization:", error);
       });
 
     // Load the Bubble chart visualization from your GitHub repository
