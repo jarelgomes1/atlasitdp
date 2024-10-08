@@ -1,109 +1,212 @@
-/* General Body Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+/* Reset box-sizing for all elements */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-h1, h2, p {
-  text-align: center;
-  color: #333;
+/* Links */
+a {
+    text-decoration: none;
+    color: rgb(61, 146, 201);
+}
+a:hover, a:focus {
+    text-decoration: underline;
 }
 
+/* Headers */
+h1, h2, h3, p {
+    text-align: center;
+    color: #333;
+}
 h1 {
-  margin: 20px 0;
-  font-size: 2rem;
+    margin: 20px 0;
+    font-size: 2rem;
 }
-
 h2 {
-  margin: 15px 0;
-  font-size: 1.5rem;
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+h3 {
+    font-weight: 100;
 }
 
-p {
-  max-width: 800px;
-  margin: 0 auto 20px auto;
-  font-size: 1.1rem;
-  line-height: 1.6;
+/* Layout styling */
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+#layout {
+    padding: 0;
 }
 
-/* Main Layout */
+.header {
+    text-align: center;
+    top: auto;
+    margin: 3em auto;
+}
+
+.sidebar {
+    background: rgb(61, 79, 93);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    padding: 20px;
+}
+
+.brand-title, .brand-tagline {
+    margin: 0;
+}
+.brand-title {
+    text-transform: uppercase;
+}
+.brand-tagline {
+    font-weight: 300;
+    color: rgb(176, 202, 219);
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-item {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+.nav-item a {
+    background: transparent;
+    border: 2px solid rgb(176, 202, 219);
+    color: #fff;
+    margin-top: 1em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 85%;
+    padding: 10px 20px;
+}
+.nav-item a:hover, .nav-item a:focus {
+    border: 2px solid rgb(61, 146, 201);
+    text-decoration: none;
+}
+
+/* Content styling */
+.content {
+    padding: 2em 1em 0;
+    margin-left: 270px;
+}
+.content-subhead {
+    text-transform: uppercase;
+    color: #aaa;
+    border-bottom: 1px solid #eee;
+    padding: 0.4em 0;
+    font-size: 80%;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+/* Post styling */
+.post {
+    padding-bottom: 2em;
+}
+.post-title {
+    font-size: 2em;
+    color: #222;
+    margin-bottom: 0.2em;
+}
+.post-avatar {
+    border-radius: 50px;
+    float: right;
+    margin-left: 1em;
+}
+.post-description {
+    font-family: Georgia, "Cambria", serif;
+    color: #444;
+    line-height: 1.8em;
+}
+.post-meta {
+    color: #999;
+    font-size: 90%;
+    margin: 0;
+}
+.post-category {
+    margin: 0 0.1em;
+    padding: 0.3em 1em;
+    color: #fff;
+    background: #999;
+    font-size: 80%;
+}
+    .post-category-design {
+        background: #5aba59;
+    }
+    .post-category-pure {
+        background: #4d85d1;
+    }
+    .post-category-js {
+        background: #df2d4f;
+    }
+
+/* Visualizations */
 .visualization-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 30px auto;
-  max-width: 100%;
-  padding: 0 20px;
-  box-sizing: border-box; /* Ensures padding is considered in element width */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
 .vis-box {
-  width: 100%;
-  max-width: 45%; /* Each box takes 45% of the screen width */
-  margin-bottom: 30px;
-  background-color: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  border-radius: 8px;
-  box-sizing: border-box;
+    width: 48%;  /* Take 48% width for two-column layout */
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
 }
 
 .vis-box h2 {
-  margin-bottom: 15px;
-  font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
 }
 
 .vis-box p {
-  font-size: 1rem;
-  color: #555;
+    font-size: 1rem;
+    color: #555;
 }
 
-/* Make visualizations fit container dynamically */
+/* Responsive design */
+@media (max-width: 1000px) {
+    .vis-box {
+        width: 100%; /* Take full width on smaller screens */
+    }
+}
+
 .vis-box iframe, 
 .vis-box > div {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .vis-box div.vega-embed {
-  max-width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
-/* Adjust responsiveness */
-@media (max-width: 1000px) {
-  .vis-box {
-    max-width: 100%; /* Full width on smaller screens */
-  }
+/* Footer styling */
+.footer {
+    padding: 1em 0;
+}
+.footer a {
+    color: #ccc;
+    font-size: 80%;
+}
+.footer .pure-menu a:hover,
+.footer .pure-menu a:focus {
+    background: none;
 }
 
-/* Ensure overflow does not break layout */
-.vis-box {
-  overflow: hidden;
-}
-
-/* Custom Scrollbars */
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-/* Hover Styles for Elements */
-.vis-box:hover {
-  transform: translateY(-5px);
-  transition: all 0.3s ease;
-}
