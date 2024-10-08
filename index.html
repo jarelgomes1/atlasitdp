@@ -22,7 +22,7 @@
 
   <!-- Full-width row for Map/Line chart as one visualization -->
   <div class="visualization-full-container">
-    <div class="vis-box" style="width: 100%;">
+    <div class="vis-box" style="width: 100%; height: 700px;"> <!-- Increased height for better visibility -->
       <h2>World Population Density and Rapid Transit Access Over Time</h2>
       <p>
         This combined visualization shows how countries' urban population density has changed over the years, and how the number of people living near rapid transit systems has evolved.
@@ -34,7 +34,7 @@
   <!-- Second row with two visualizations: Bubble chart and Heatmap -->
   <div class="visualization-container">
     <!-- Container for the Bubble Chart -->
-    <div class="vis-box" style="width: 48%;">
+    <div class="vis-box" style="width: 48%; height: 600px;"> <!-- Increased height for bubble chart -->
       <h2>Population Near Rapid Transit by Year</h2>
       <p>
         This bubble chart highlights the proportion of people living near rapid transit systems in each country for a selected year. The size of each bubble represents the country's population density, and you can follow trends over time using the slider or autoplay feature.
@@ -43,7 +43,7 @@
     </div>
 
     <!-- Container for the Heatmap -->
-    <div class="vis-box scrollable-vis" style="width: 48%;">
+    <div class="vis-box scrollable-vis" style="width: 48%; height: 600px; overflow-y: auto;"> <!-- Increased height for heatmap -->
       <h2>Heatmap of Population Near Transit Over Time</h2>
       <p>
         This heatmap shows the distribution of people living near rapid transit systems by country and year. The intensity of the color reflects the proportion of the population with access.
@@ -54,7 +54,7 @@
 
   <!-- Third row for Violin Plot -->
   <div class="visualization-container">
-    <div class="vis-box" style="width: 100%;">
+    <div class="vis-box" style="width: 100%; height: 500px;"> <!-- Adjusted height for the violin plot -->
       <h2>Violin Plot of People Near Rapid Transit by Country</h2>
       <p>
         Select the countries below to compare their distribution of people near rapid transit systems.
