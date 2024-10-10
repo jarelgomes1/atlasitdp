@@ -54,6 +54,24 @@
       height: 500px;
       width: 100%;
     }
+    /* Dark Mode Styling */
+    .dark-mode {
+      background-color: #333;
+      color: white;
+    }
+    .dark-mode .card-body {
+      background-color: #444;
+    }
+    .dark-mode .pure-menu {
+      background-color: #444;
+      color: white;
+    }
+    .dark-mode .pure-menu-heading {
+      color: #27ae60;
+    }
+    .dark-mode .pure-menu-link {
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -67,6 +85,13 @@
       <li class="pure-menu-item"><a href="#" class="pure-menu-link">Data</a></li>
       <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
     </ul>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="pure-g">
+    <div class="pure-u-1">
+      <input type="text" class="pure-input-1" placeholder="Search for a country...">
+    </div>
   </div>
 
   <div class="container mt-4">
@@ -128,7 +153,18 @@
     </div>
   </div>
 
+  <!-- Footer Section -->
+  <footer style="background-color: #27ae60; padding: 20px; text-align: center; color: white;">
+    <p>Urban Growth Insights © 2024</p>
+    <p>Contact us at <a href="mailto:info@urbangrowth.com" style="color: white;">info@urbangrowth.com</a></p>
+    <p><a href="https://github.com/jarelgomes1/atlasitdp" target="_blank" style="color: white;">GitHub Repository</a></p>
+  </footer>
+
+  <!-- Dark Mode Toggle -->
+  <button class="pure-button" id="dark-mode-toggle" style="margin: 10px;">Toggle Dark Mode</button>
+
   <script type="text/javascript">
+    // Load visualizations with Vega
     vegaEmbed('#map-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vg.json')
       .then(function(result) {
         console.log("Map visualization loaded successfully!");
@@ -156,6 +192,20 @@
       }).catch(function(error) {
         console.error("Error loading the Violin Plot visualization:", error);
       });
+
+    // Dark Mode Toggle
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+
+    // Search Functionality (Future feature)
+    const searchBar = document.querySelector('input[type="text"]');
+    searchBar.addEventListener('input', function() {
+      const query = this.value.toLowerCase();
+      // Logic for filtering countries or data will go here
+      console.log("Search query:", query);
+    });
   </script>
 
 </body>

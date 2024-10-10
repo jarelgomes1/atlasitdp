@@ -99,3 +99,25 @@ p {
 .l-box {
     padding: 1em;
 }
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .visualization-container {
+    height: 300px; /* Reduced height for smaller screens */
+  }
+}
+
+/* Fade-in effect for visualizations */
+.visualization-container {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
