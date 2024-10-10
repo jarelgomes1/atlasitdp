@@ -17,7 +17,7 @@
 
   <style>
     body {
-      background-color: #f7f3e9; /* Cream background */
+      background-color: #f7f3e9;
       color: #333;
       font-family: 'Roboto', sans-serif;
     }
@@ -57,8 +57,15 @@
       color: #27ae60;
     }
     .visualization-container {
-      height: 500px; 
+      height: 500px;
       width: 100%;
+    }
+    .side-by-side {
+      display: flex;
+      justify-content: space-between;
+    }
+    .side-by-side > .visualization-container {
+      width: 48%; /* Ensure each visualization takes up about half the space */
     }
     /* Dark Mode Styling */
     .dark-mode {
@@ -118,7 +125,7 @@
       </div>
     </div>
 
-    <!-- First row: Map/Line Chart pairing -->
+    <!-- First Row for Map/Line chart -->
     <div class="row mt-4">
       <div class="col-12">
         <div class="card">
@@ -133,9 +140,10 @@
       </div>
     </div>
 
-    <!-- Second row: Bubble chart (left) and Heatmap (right) -->
+    <!-- Second row: Bubble Chart (left) and Heatmap (right) side by side -->
     <div class="row mt-4">
-      <div class="col-md-6">
+      <div class="side-by-side">
+        <!-- Bubble Chart on the left -->
         <div class="card">
           <div class="card-header">Population Near Rapid Transit by Year</div>
           <div class="card-subtitle">
@@ -145,8 +153,8 @@
             <div id="bubble-vis" class="visualization-container"></div>
           </div>
         </div>
-      </div>
-      <div class="col-md-6">
+
+        <!-- Heatmap on the right -->
         <div class="card">
           <div class="card-header">Heatmap of Population Near Transit Over Time</div>
           <div class="card-subtitle">
@@ -159,9 +167,10 @@
       </div>
     </div>
 
-    <!-- Third row: Violin Plot (left) and Parallel Coordinates Plot (right) -->
+    <!-- Third row: Violin Plot (left) and Parallel Coordinates Plot (right) side by side -->
     <div class="row mt-4">
-      <div class="col-md-6">
+      <div class="side-by-side">
+        <!-- Violin Plot on the left -->
         <div class="card">
           <div class="card-header">Violin Plot of People Near Rapid Transit by Country</div>
           <div class="card-subtitle">
@@ -171,8 +180,8 @@
             <div id="violin-vis" class="visualization-container"></div>
           </div>
         </div>
-      </div>
-      <div class="col-md-6">
+
+        <!-- Parallel Coordinates Plot on the right -->
         <div class="card">
           <div class="card-header">Urban and Transit Infrastructure Indicators by Country</div>
           <div class="card-subtitle">
