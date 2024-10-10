@@ -202,5 +202,10 @@
       }
     }
   ],
-  "config": {}
+  "config": {
+    "legend": {
+      "orient": "bottom",
+      "direction": "horizontal"
+    }
+  }
 }
