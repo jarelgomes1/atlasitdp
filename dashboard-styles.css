@@ -8,15 +8,15 @@
 /* Global Styling */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #101010;
-    color: #fff;
+    background-color: #f7f3e9; /* Cream background */
+    color: #333; /* Dark gray for readability */
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 /* Headers with interactivity */
 h1, h2, h3, p {
     text-align: center;
-    color: #fff;
+    color: #2c3e50; /* Dark blue text for contrast */
     transition: color 0.3s ease-in-out;
 }
 
@@ -31,21 +31,22 @@ h2 {
     margin: 15px 0;
     font-size: 1.7rem;
     font-weight: 600;
-    color: #27ae60;
+    color: #27ae60; /* Green headers */
 }
 
 p {
     margin: 0 auto 20px;
     max-width: 800px;
     line-height: 1.6;
-    color: #ccc;
+    color: #666; /* Lighter gray for body text */
 }
 
 /* Pure Menu Styling */
 .pure-menu {
-    background-color: #333;
+    background-color: #fff;
     padding: 10px;
-    color: white;
+    color: #333;
+    border-bottom: 2px solid #27ae60;
 }
 
 .pure-menu-heading {
@@ -54,13 +55,13 @@ p {
 }
 
 .pure-menu-link {
-    color: white;
+    color: #333;
     font-size: 1rem;
     padding: 10px;
 }
 
 .pure-menu-link:hover {
-    color: #2ecc71;
+    color: #27ae60;
 }
 
 /* Green-themed buttons */
@@ -81,7 +82,7 @@ p {
 }
 
 .vis-box {
-    background-color: #1c1c1c;
+    background-color: #fff; /* White background for contrast */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
