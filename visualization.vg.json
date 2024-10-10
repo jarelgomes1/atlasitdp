@@ -14,7 +14,7 @@
     {
       "name": "mercator",
       "type": "mercator",
-      "scale": 200,
+      "scale": 100,
       "translate": [{"signal": "width / 4"}, {"signal": "height / 2"}]
     }
   ],
@@ -44,10 +44,7 @@
         }
       ]
     },
-    {
-      "name": "graticule",
-      "transform": [{"type": "graticule"}]
-    }
+    {"name": "graticule", "transform": [{"type": "graticule"}]}
   ],
   "marks": [
     {
@@ -96,7 +93,12 @@
     {
       "type": "group",
       "encode": {
-        "enter": {"width": {"value": 600}, "height": {"value": 600}, "x": {"value": 1000}, "y": {"value": -329}}
+        "enter": {
+          "width": {"value": 50},
+          "height": {"value": 650},
+          "x": {"value": 625},
+          "y": {"value": -20}
+        }
       },
       "marks": [
         {
