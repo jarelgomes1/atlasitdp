@@ -21,8 +21,8 @@
           "groupby": ["Indicator"]
         }
       ],
-      "width": 300, 
-      "height": 875, 
+      "width": 200, 
+      "height": 500, 
       "layer": [
         {
           "mark": {
@@ -80,7 +80,8 @@
             },
             "color": {
               "field": "Country",
-              "type": "nominal"
+              "type": "nominal",
+              "legend": null
             },
             "opacity": {
               "condition": {
@@ -127,8 +128,8 @@
           "groupby": ["Indicator"]
         }
       ],
-      "width": 300,
-      "height": 800,
+      "width": 200,
+      "height": 500,
       "layer": [
         {
           "mark": {
@@ -186,7 +187,8 @@
             },
             "color": {
               "field": "Country",
-              "type": "nominal"
+              "type": "nominal",
+              "legend": null
             },
             "opacity": {
               "condition": {
@@ -207,10 +209,6 @@
     }
   ],
   "config": {
-    "legend": {
-      "orient": "bottom",
-      "direction": "horizontal"
-    },
     "concat": {
       "spacing": -200
     }
