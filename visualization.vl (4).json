@@ -10,36 +10,25 @@
           "fold": ["Block_Density", "Population_Density"],
           "as": ["Indicator", "Value"]
         },
+        {"filter": "isValid(datum.Value)"},
         {
-          "filter": "isValid(datum.Value)"
-        },
-        {
-          "window": [
-            {"op": "rank", "as": "rank"}
-          ],
+          "window": [{"op": "rank", "as": "rank"}],
           "sort": [{"field": "Value", "order": "descending"}],
           "groupby": ["Indicator"]
         }
       ],
-      "width": 300, 
-      "height": 875, 
+      "width": 300,
+      "height": 875,
       "layer": [
         {
-          "mark": {
-            "type": "line",
-            "strokeWidth": 1
-          },
+          "mark": {"type": "line", "strokeWidth": 1},
           "encoding": {
             "x": {
               "field": "Indicator",
               "type": "nominal",
               "title": "Indicators"
             },
-            "y": {
-              "field": "Value",
-              "type": "quantitative",
-              "title": "Values"
-            },
+            "y": {"field": "Value", "type": "quantitative", "title": "Values"},
             "color": {
               "condition": {
                 "test": "datum.rank <= 3",
@@ -49,43 +38,20 @@
               "value": "black"
             },
             "opacity": {
-              "condition": {
-                "test": "datum.rank <= 3",
-                "value": 1
-              },
+              "condition": {"test": "datum.rank <= 3", "value": 1},
               "value": 0.2
             }
           }
         },
         {
-          "mark": {
-            "type": "text",
-            "align": "left",
-            "dx": 5,
-            "dy": -5
-          },
+          "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
           "encoding": {
-            "x": {
-              "field": "Indicator",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "Value",
-              "type": "quantitative"
-            },
-            "text": {
-              "field": "Country",
-              "type": "nominal"
-            },
-            "color": {
-              "field": "Country",
-              "type": "nominal"
-            },
+            "x": {"field": "Indicator", "type": "nominal"},
+            "y": {"field": "Value", "type": "quantitative"},
+            "text": {"field": "Country", "type": "nominal"},
+            "color": {"field": "Country", "type": "nominal"},
             "opacity": {
-              "condition": {
-                "test": "datum.rank <= 3",
-                "value": 1
-              },
+              "condition": {"test": "datum.rank <= 3", "value": 1},
               "value": 0
             }
           }
@@ -115,13 +81,9 @@
           ],
           "as": ["Indicator", "Value"]
         },
+        {"filter": "isValid(datum.Value)"},
         {
-          "filter": "isValid(datum.Value)"
-        },
-        {
-          "window": [
-            {"op": "rank", "as": "rank"}
-          ],
+          "window": [{"op": "rank", "as": "rank"}],
           "sort": [{"field": "Value", "order": "descending"}],
           "groupby": ["Indicator"]
         }
@@ -130,21 +92,14 @@
       "height": 800,
       "layer": [
         {
-          "mark": {
-            "type": "line",
-            "strokeWidth": 1
-          },
+          "mark": {"type": "line", "strokeWidth": 1},
           "encoding": {
             "x": {
               "field": "Indicator",
               "type": "nominal",
               "title": "Indicators"
             },
-            "y": {
-              "field": "Value",
-              "type": "quantitative",
-              "title": "Values"
-            },
+            "y": {"field": "Value", "type": "quantitative", "title": "Values"},
             "color": {
               "condition": {
                 "test": "datum.rank <= 3",
@@ -154,43 +109,20 @@
               "value": "black"
             },
             "opacity": {
-              "condition": {
-                "test": "datum.rank <= 3",
-                "value": 1
-              },
+              "condition": {"test": "datum.rank <= 3", "value": 1},
               "value": 0.2
             }
           }
         },
         {
-          "mark": {
-            "type": "text",
-            "align": "left",
-            "dx": 5,
-            "dy": -5
-          },
+          "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
           "encoding": {
-            "x": {
-              "field": "Indicator",
-              "type": "nominal"
-            },
-            "y": {
-              "field": "Value",
-              "type": "quantitative"
-            },
-            "text": {
-              "field": "Country",
-              "type": "nominal"
-            },
-            "color": {
-              "field": "Country",
-              "type": "nominal"
-            },
+            "x": {"field": "Indicator", "type": "nominal"},
+            "y": {"field": "Value", "type": "quantitative"},
+            "text": {"field": "Country", "type": "nominal"},
+            "color": {"field": "Country", "type": "nominal"},
             "opacity": {
-              "condition": {
-                "test": "datum.rank <= 3",
-                "value": 1
-              },
+              "condition": {"test": "datum.rank <= 3", "value": 1},
               "value": 0
             }
           }
@@ -204,9 +136,5 @@
       }
     }
   ],
-  "config": {
-    "concat": {
-      "spacing": -200
-    }
-  }
+  "config": {"concat": {"spacing": -200}}
 }
