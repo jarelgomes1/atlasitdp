@@ -94,7 +94,7 @@
       "type": "group",
       "encode": {
         "enter": {
-          "width": {"value": 50},
+          "width": {"value": 500},
           "height": {"value": 650},
           "x": {"value": 625},
           "y": {"value": -20}
@@ -125,7 +125,7 @@
               "name": "xscale",
               "type": "point",
               "domain": {"data": "filtered_data", "field": "Year"},
-              "range": "width"
+              "range": [0, 400]
             },
             {
               "name": "yscale_rpt",
