@@ -21,8 +21,8 @@
           "groupby": ["Indicator"]
         }
       ],
-      "width": 300,    
-      "height": 500,   
+      "width": 300, 
+      "height": 875, 
       "layer": [
         {
           "mark": {
@@ -44,7 +44,8 @@
               "condition": {
                 "test": "datum.rank <= 3",
                 "field": "Country",
-                "type": "nominal"
+                "type": "nominal",
+                "legend": null
               },
               "value": "black"
             },
@@ -126,8 +127,8 @@
           "groupby": ["Indicator"]
         }
       ],
-      "width": 320,   
-      "height": 500, 
+      "width": 300,
+      "height": 800,
       "layer": [
         {
           "mark": {
@@ -149,7 +150,8 @@
               "condition": {
                 "test": "datum.rank <= 3",
                 "field": "Country",
-                "type": "nominal"
+                "type": "nominal",
+                "legend": null
               },
               "value": "black"
             },
@@ -205,6 +207,10 @@
     }
   ],
   "config": {
+    "legend": {
+      "orient": "bottom",
+      "direction": "horizontal"
+    },
     "concat": {
       "spacing": -200
     }
