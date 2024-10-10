@@ -1,128 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Urban Population Growth and Transit Access</title>
-  
-  <!-- Include Vega and Vega-Lite libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-
-  <!-- Link Pure.css for base, grids, forms, and buttons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/buttons-min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/menus-min.css">
-
-  <!-- Link the external custom CSS file -->
-  <link rel="stylesheet" href="dashboard-styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Ridership Insights</title>
+    
+    <!-- Include Pure.css and Vega libraries -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="dashboard-styles.css">
 </head>
 <body>
+    <!-- Container for Atlas Ridership Dashboard -->
+    <div class="container-fluid mt-4">
+        <!-- Header Section -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="title-container">
+                            <img src="atlas_logo.png" alt="Atlas Ridership Logo" class="img-fluid">
+                            <h1>Atlas Ridership Insights</h1>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-center">Explore how urban population density and access to rapid transit systems have evolved over the years. This dashboard provides insights into the correlation between urbanization and transit access.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <!-- Menu Bar -->
-  <div class="pure-menu pure-menu-horizontal">
-    <a href="#" class="pure-menu-heading">Urban Growth Analysis</a>
-    <ul class="pure-menu-list">
-      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
-      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Visualizations</a></li>
-      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Data</a></li>
-      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
-    </ul>
-  </div>
+        <!-- First Visualization Section -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">Population Near Transit Metrics</div>
+                    <div class="card-body">
+                        <div id="radar" class="visualization-container"></div>
+                        <div class="description-box">
+                            <p>This radar chart showcases the population density and proximity to transit systems across various countries. It highlights key transit metrics and urban growth, offering a comparative view of public transit reach in urbanized areas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <h1>Exploring Urban Growth and Transit Access Over Time</h1>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">Urbanization vs. Transit Access</div>
+                    <div class="card-body">
+                        <div id="bubble" class="visualization-container-large"></div>
+                        <div class="description-box">
+                            <p>This scatter plot compares the urban population and proximity to transit systems over the years, revealing growth patterns in urbanization and access to public transport. Larger circles represent countries with higher population densities near transit hubs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-  <p>
-    In this visualization, we explore how urban population density and access to rapid transit systems have evolved across different countries over the years. The visualizations below provide insights into how the number of people living near rapid transit systems has grown in tandem with increasing urbanization.
-  </p>
+        <!-- Second Visualization Section -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">Transit Density Trends Over Time</div>
+                    <div class="card-body">
+                        <div id="bump" class="visualization-container"></div>
+                        <div class="description-box">
+                            <p>This bump chart captures changes in transit access across multiple countries over time. Each line represents a country's urbanization trend and transit density, providing a dynamic look at global transit systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-  <!-- Full-width row for Map/Line chart -->
-  <div class="pure-g">
-    <div class="pure-u-1">
-      <div class="vis-box" style="width: 100%; height: 1000px;">
-        <h2>World Population Density and Rapid Transit Access</h2>
-        <p>This map shows how different countries' urban population density has changed over the years and how many people now have access to rapid transit systems.</p>
-        <div id="map-vis"></div>
-      </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">People Near Transit by Year</div>
+                    <div class="card-body">
+                        <div id="line" class="visualization-container-large"></div>
+                        <div class="description-box">
+                            <p>This line chart tracks the number of people living near rapid transit systems, visualizing growth and dips over time. The chart provides a longitudinal analysis of public transit reach across key urban areas worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Visualization Section -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header text-center">Transit Access Map</div>
+                    <div class="card-body">
+                        <div id="map-vis" class="visualization-container-large"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <!-- Second row with two visualizations: Bubble chart and Heatmap -->
-  <div class="pure-g">
-    <div class="pure-u-1 pure-u-md-1-2">
-      <div class="vis-box" style="height: 600px;">
-        <h2>Population Near Rapid Transit by Year</h2>
-        <p>This bubble chart highlights the proportion of people living near rapid transit systems in each country for a selected year. The size of each bubble represents the country's population density, and you can follow trends over time using the slider or autoplay feature.</p>
-        <div id="bubble-vis" style="height: 500px;"></div>
-      </div>
-    </div>
+    <!-- Load and embed visualizations using Vega-Lite -->
+    <script>
+        function loadAndEmbedVegaLite(elementId, jsonFile) {
+            fetch(jsonFile)
+                .then(response => response.json())
+                .then(spec => vegaEmbed(elementId, spec, { actions: false }))
+                .catch(error => {
+                    document.querySelector(elementId).innerHTML = `<p class="error-message">Error loading visualization: ${error.message}</p>`;
+                });
+        }
 
-    <div class="pure-u-1 pure-u-md-1-2">
-      <div class="vis-box" style="height: 600px;">
-        <h2>Heatmap of Population Near Transit Over Time</h2>
-        <p>This heatmap shows the distribution of people living near rapid transit systems by country and year. The intensity of the color reflects the proportion of the population with access.</p>
-        <div id="heatmap-vis" style="height: 500px;"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Third row for Violin Plot -->
-  <div class="pure-g">
-    <div class="pure-u-1">
-      <div class="vis-box" style="width: 100%; height: 1000px;">
-        <h2>Violin Plot of People Near Rapid Transit by Country</h2>
-        <p>Select the countries below to compare their distribution of people near rapid transit systems.</p>
-        <div id="violin-vis" style="height: 900px;"></div>
-      </div>
-    </div>
-  </div>
-
-  <p>
-    Together, these visualizations allow us to see the correlation between urbanization and access to public transit. Countries with higher urban population densities typically have better access to rapid transit systems. Use the interactive features to explore the data from 1975 to 2024.
-  </p>
-
-  <!-- Green-themed buttons -->
-  <div class="pure-g">
-    <div class="pure-u-1">
-      <button class="pure-button pure-button-primary green-button">Explore Data</button>
-      <button class="pure-button green-button">Contact Us</button>
-    </div>
-  </div>
-
-  <script type="text/javascript">
-    // Load the Map visualization from your GitHub repository
-    vegaEmbed('#map-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vg.json')
-      .then(function(result) {
-        console.log("Map visualization loaded successfully!");
-      }).catch(function(error) {
-        console.error("Error loading the Map visualization:", error);
-      });
-
-    // Load the Heatmap visualization from your GitHub repository
-    vegaEmbed('#heatmap-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(2).json')
-      .then(function(result) {
-        console.log("Heatmap visualization loaded successfully!");
-      }).catch(function(error) {
-        console.error("Error loading the Heatmap visualization:", error);
-      });
-
-    // Load the Bubble chart visualization from your GitHub repository
-    vegaEmbed('#bubble-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(1).json')
-      .then(function(result) {
-        console.log("Bubble chart visualization loaded successfully!");
-      }).catch(function(error) {
-        console.error("Error loading the Bubble chart visualization:", error);
-      });
-
-    // Load the Violin Plot visualization from your GitHub repository
-    vegaEmbed('#violin-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(3).json')
-      .then(function(result) {
-        console.log("Violin Plot visualization loaded successfully!");
-      }).catch(function(error) {
-        console.error("Error loading the Violin Plot visualization:", error);
-      });
-  </script>
+        // Load and embed each visualization
+        loadAndEmbedVegaLite('#radar', 'radar.json');
+        loadAndEmbedVegaLite('#bubble', 'bubble.json');
+        loadAndEmbedVegaLite('#bump', 'bump.json');
+        loadAndEmbedVegaLite('#line', 'line_chart.json');
+        loadAndEmbedVegaLite('#map-vis', 'map.json');
+    </script>
 </body>
 </html>
