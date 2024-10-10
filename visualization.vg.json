@@ -154,32 +154,26 @@
               "scale": "xscale",
               "title": "Year",
               "labelFontSize": {"value": 14},
-              "labelColor": {"value": "white"},  // Change label color to white
               "titleFontSize": {"value": 16},
-              "titlePadding": {"value": 10},
-              "titleColor": {"value": "white"}  // Change title color to white
+              "titlePadding": {"value": 10}
             },
             {
               "orient": "left",
               "scale": "yscale_rpt",
               "title": "People Near Rapid Transit",
               "labelFontSize": {"value": 14},
-              "labelColor": {"value": "white"},  // Change label color to white
               "titleFontSize": {"value": 16},
-              "titlePadding": {"value": 10},
-              "titleColor": {"value": "white"}  // Change title color to white
+              "titlePadding": {"value": 10}
             },
             {
               "orient": "right",
               "scale": "yscale_pd",
               "title": "Population Density",
               "labelFontSize": {"value": 14},
-              "labelColor": {"value": "white"},  // Change label color to white
               "titleFontSize": {"value": 16},
-              "titlePadding": {"value": 10},
-              "titleColor": {"value": "white"}  // Change title color to white
+              "titlePadding": {"value": 10}
             }
-          ]
+          ],
           "marks": [
             {
               "type": "line",
