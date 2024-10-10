@@ -21,8 +21,8 @@
           "groupby": ["Indicator"]
         }
       ],
-      "width": 300,    // Adjust width of the first plot
-      "height": 875,   // Adjust height of the first plot
+      "width": 300, 
+      "height": 875, 
       "layer": [
         {
           "mark": {
@@ -126,8 +126,8 @@
           "groupby": ["Indicator"]
         }
       ],
-      "width": 300,    // Adjust width of the first plot
-      "height": 800,   // Adjust height of the first plot
+      "width": 300,
+      "height": 800,
       "layer": [
         {
           "mark": {
