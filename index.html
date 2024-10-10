@@ -19,15 +19,39 @@
     body {
       background-color: #101010;
       color: #fff;
+      font-family: 'Roboto', sans-serif;
     }
     .card-header {
-      background-color: #2ecc71;
+      background-color: #27ae60;
       color: white;
       font-weight: bold;
+      font-size: 1.25rem;
+      text-align: center;
       border-radius: 12px 12px 0 0;
     }
     .card-body {
       background-color: #1c1c1c;
+      padding: 20px;
+    }
+    .pure-menu {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+    .pure-menu-heading {
+      font-size: 1.5rem;
+      color: #27ae60;
+    }
+    .pure-menu-link {
+      color: white;
+      padding: 10px;
+    }
+    .pure-menu-link:hover {
+      color: #2ecc71;
+    }
+    .visualization-container {
+      height: 500px;
+      width: 100%;
     }
   </style>
 </head>
@@ -48,7 +72,7 @@
     <div class="row">
       <div class="col-12">
         <div class="card">
-          <div class="card-header text-center">Exploring Urban Growth and Transit Access Over Time</div>
+          <div class="card-header">Exploring Urban Growth and Transit Access Over Time</div>
           <div class="card-body">
             <p class="text-center">
               This visualization explores how urban population density and access to rapid transit systems have evolved across different countries over the years. The visualizations below provide insights into the growing number of people living near rapid transit systems as urbanization increases.
@@ -62,7 +86,7 @@
     <div class="row mt-4">
       <div class="col-12">
         <div class="card">
-          <div class="card-header text-center">World Population Density and Rapid Transit Access</div>
+          <div class="card-header">World Population Density and Rapid Transit Access</div>
           <div class="card-body">
             <div id="map-vis" class="visualization-container"></div>
           </div>
@@ -74,7 +98,7 @@
     <div class="row mt-4">
       <div class="col-md-6">
         <div class="card">
-          <div class="card-header text-center">Population Near Rapid Transit by Year</div>
+          <div class="card-header">Population Near Rapid Transit by Year</div>
           <div class="card-body">
             <div id="bubble-vis" class="visualization-container"></div>
           </div>
@@ -82,7 +106,7 @@
       </div>
       <div class="col-md-6">
         <div class="card">
-          <div class="card-header text-center">Heatmap of Population Near Transit Over Time</div>
+          <div class="card-header">Heatmap of Population Near Transit Over Time</div>
           <div class="card-body">
             <div id="heatmap-vis" class="visualization-container"></div>
           </div>
@@ -94,7 +118,7 @@
     <div class="row mt-4">
       <div class="col-12">
         <div class="card">
-          <div class="card-header text-center">Violin Plot of People Near Rapid Transit by Country</div>
+          <div class="card-header">Violin Plot of People Near Rapid Transit by Country</div>
           <div class="card-body">
             <div id="violin-vis" class="visualization-container"></div>
           </div>
