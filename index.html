@@ -10,14 +10,28 @@
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 
-  <!-- Link Pure.css for base and responsive grid system -->
+  <!-- Link Pure.css for base, grids, forms, and buttons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/buttons-min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/menus-min.css">
 
   <!-- Link the external custom CSS file -->
   <link rel="stylesheet" href="dashboard-styles.css">
 </head>
 <body>
+
+  <!-- Menu Bar -->
+  <div class="pure-menu pure-menu-horizontal">
+    <a href="#" class="pure-menu-heading">Urban Growth Analysis</a>
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Home</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Visualizations</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Data</a></li>
+      <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact</a></li>
+    </ul>
+  </div>
+
   <h1>Exploring Urban Growth and Transit Access Over Time</h1>
 
   <p>
@@ -68,6 +82,14 @@
   <p>
     Together, these visualizations allow us to see the correlation between urbanization and access to public transit. Countries with higher urban population densities typically have better access to rapid transit systems. Use the interactive features to explore the data from 1975 to 2024.
   </p>
+
+  <!-- Green-themed buttons -->
+  <div class="pure-g">
+    <div class="pure-u-1">
+      <button class="pure-button pure-button-primary green-button">Explore Data</button>
+      <button class="pure-button green-button">Contact Us</button>
+    </div>
+  </div>
 
   <script type="text/javascript">
     // Load the Map visualization from your GitHub repository
