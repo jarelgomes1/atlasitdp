@@ -58,7 +58,7 @@
       "background": "#1c1c1c",
       "title": {
         "text": "Block Density and Population Density by Country",
-        "fontSize": 20,
+        "fontSize": 22,
         "color": "white"
       }
     },
@@ -126,8 +126,8 @@
       ],
       "background": "#1c1c1c",
       "title": {
-        "text": "Transportation Indicators by Country",
-        "fontSize": 20,
+        "text": "Transportation Infrastructure Indicators by Country",
+        "fontSize": 22,
         "color": "white"
       }
     }

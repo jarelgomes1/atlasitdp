@@ -29,8 +29,14 @@
       text-align: center;
       border-radius: 12px 12px 0 0;
     }
+    .card-subtitle {
+      font-size: 1rem;
+      text-align: center;
+      margin-top: 10px;
+      color: #666;
+    }
     .card-body {
-      background-color: #fff; /* White background for visualizations */
+      background-color: #fff;
       padding: 20px;
     }
     .pure-menu {
@@ -51,7 +57,7 @@
       color: #27ae60;
     }
     .visualization-container {
-      height: 500px; /* Ensuring height is well distributed */
+      height: 500px; 
       width: 100%;
     }
     /* Dark Mode Styling */
@@ -95,13 +101,17 @@
   </div>
 
   <div class="container mt-4">
+    <!-- Introduction Section -->
     <div class="row">
       <div class="col-12">
         <div class="card">
           <div class="card-header">Exploring Urban Growth and Transit Access Over Time</div>
+          <div class="card-subtitle">
+            A journey through how urbanization has influenced population density and proximity to transit networks across the globe.
+          </div>
           <div class="card-body">
             <p class="text-center">
-              This visualization explores how urban population density and access to rapid transit systems have evolved across different countries over the years. The visualizations below provide insights into the growing number of people living near rapid transit systems as urbanization increases.
+              As urbanization increases, more people are living near rapid transit systems. These visualizations help to explore this growth and its impact on access to transportation.
             </p>
           </div>
         </div>
@@ -113,6 +123,9 @@
       <div class="col-12">
         <div class="card">
           <div class="card-header">World Population Density and Rapid Transit Access</div>
+          <div class="card-subtitle">
+            Examine how population density and transit access evolved across different regions.
+          </div>
           <div class="card-body">
             <div id="map-vis" class="visualization-container"></div>
           </div>
@@ -126,6 +139,9 @@
       <div class="col-md-6">
         <div class="card">
           <div class="card-header">Population Near Rapid Transit by Year</div>
+          <div class="card-subtitle">
+            Track the annual growth of populations living near transit networks.
+          </div>
           <div class="card-body">
             <div id="bubble-vis" class="visualization-container"></div>
           </div>
@@ -135,6 +151,9 @@
       <div class="col-md-6">
         <div class="card">
           <div class="card-header">Heatmap of Population Near Transit Over Time</div>
+          <div class="card-subtitle">
+            A heatmap visualizing changes in transit access by population density over time.
+          </div>
           <div class="card-body">
             <div id="heatmap-vis" class="visualization-container"></div>
           </div>
@@ -147,6 +166,9 @@
       <div class="col-12">
         <div class="card">
           <div class="card-header">Violin Plot of People Near Rapid Transit by Country</div>
+          <div class="card-subtitle">
+            Compare how different countries rank in terms of transit access for their populations.
+          </div>
           <div class="card-body">
             <div id="violin-vis" class="visualization-container"></div>
           </div>
@@ -158,9 +180,12 @@
     <div class="row mt-4">
       <div class="col-12">
         <div class="card">
-          <div class="card-header">Parallel Coordinates Plot</div>
+          <div class="card-header">Urban and Transit Infrastructure Indicators by Country</div>
+          <div class="card-subtitle">
+            A comparison of various infrastructure indicators such as block density, population density, and access to different types of transit.
+          </div>
           <div class="card-body">
-            <div id="parallel-coords-vis" class="visualization-container"></div>
+            <div id="parallel-coords-vis" class="visualization-container" style="height: 650px;"></div>
           </div>
         </div>
       </div>
