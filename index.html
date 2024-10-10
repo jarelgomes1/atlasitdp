@@ -5,100 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Urban Population Growth and Transit Access</title>
   
-  <!-- Include Vega and Vega-Lite libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-
-  <!-- Link the external CSS file -->
+  <!-- Include Pure.css library -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+  
+  <!-- Link to custom external CSS file -->
   <link rel="stylesheet" href="dashboard-styles.css">
 </head>
 <body>
-  <h1>Exploring Urban Growth and Transit Access Over Time</h1>
+  <div class="pure-g">
+    <div class="pure-u-1">
+      <h1>Exploring Urban Growth and Transit Access Over Time</h1>
+    </div>
 
-  <p>
-    In this visualization, we explore how urban population density and access to rapid transit systems have evolved across different countries over the years. The visualizations below provide insights into how the number of people living near rapid transit systems has grown in tandem with increasing urbanization.
-  </p>
-
-  <!-- Full-width row for Map/Line chart -->
-  <div class="visualization-full-container" style="width: 2500px; height: 1000px;">
-    <div class="vis-box" style="width: 100%; height: 100%;">
-      <h2>World Population Density and Rapid Transit Access</h2>
-      <p>
-        This map shows how different countries' urban population density has changed over the years and how many people now have access to rapid transit systems.
+    <!-- Introduction Section -->
+    <div class="pure-u-1 pure-u-md-2-3 pure-u-lg-3-5">
+      <p class="intro-text">
+        In this visualization, we explore how urban population density and access to rapid transit systems have evolved across different countries over the years. The visualizations below provide insights into how the number of people living near rapid transit systems has grown in tandem with increasing urbanization.
       </p>
-      <div id="map-vis"></div>
+    </div>
+
+    <!-- Full-width Map/Line chart visualization -->
+    <div class="pure-u-1">
+      <div class="visualization-full-container">
+        <div class="vis-box">
+          <h2>World Population Density and Rapid Transit Access</h2>
+          <p>
+            This map shows how different countries' urban population density has changed over the years and how many people now have access to rapid transit systems.
+          </p>
+          <div id="map-vis"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Row for Bubble Chart and Heatmap -->
+    <div class="pure-u-1 pure-u-md-1-2">
+      <!-- Bubble Chart -->
+      <div class="vis-box">
+        <h2>Population Near Rapid Transit by Year</h2>
+        <p>
+          This bubble chart highlights the proportion of people living near rapid transit systems in each country for a selected year.
+        </p>
+        <div id="bubble-vis"></div>
+      </div>
+    </div>
+
+    <div class="pure-u-1 pure-u-md-1-2">
+      <!-- Heatmap -->
+      <div class="vis-box">
+        <h2>Heatmap of Population Near Transit Over Time</h2>
+        <p>
+          This heatmap shows the distribution of people living near rapid transit systems by country and year.
+        </p>
+        <div id="heatmap-vis"></div>
+      </div>
+    </div>
+
+    <!-- Violin Plot Section -->
+    <div class="pure-u-1">
+      <div class="visualization-full-container">
+        <div class="vis-box">
+          <h2>Violin Plot of People Near Rapid Transit by Country</h2>
+          <p>Select the countries below to compare their distribution of people near rapid transit systems.</p>
+          <div id="violin-vis"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Conclusion Section -->
+    <div class="pure-u-1">
+      <p class="conclusion-text">
+        Together, these visualizations allow us to see the correlation between urbanization and access to public transit.
+      </p>
     </div>
   </div>
 
-  <!-- Second row with two visualizations: Bubble chart and Heatmap -->
-  <div class="visualization-container">
-    <!-- Container for the Bubble Chart -->
-    <div class="vis-box">
-      <h2>Population Near Rapid Transit by Year</h2>
-      <p>
-        This bubble chart highlights the proportion of people living near rapid transit systems in each country for a selected year. The size of each bubble represents the country's population density, and you can follow trends over time using the slider or autoplay feature.
-      </p>
-      <div id="bubble-vis"></div>
-    </div>
-
-    <!-- Container for the Heatmap -->
-    <div class="vis-box">
-      <h2>Heatmap of Population Near Transit Over Time</h2>
-      <p>
-        This heatmap shows the distribution of people living near rapid transit systems by country and year. The intensity of the color reflects the proportion of the population with access.
-      </p>
-      <div id="heatmap-vis"></div>
-    </div>
-  </div>
-
-  <!-- Third row for Violin Plot -->
-  <div class="visualization-full-container" style="width: 1000px; height: 1000px;">
-    <div class="vis-box" style="width: 100%; height: 100%;">
-      <h2>Violin Plot of People Near Rapid Transit by Country</h2>
-      <p>
-        Select the countries below to compare their distribution of people near rapid transit systems.
-      </p>
-      <div id="violin-vis"></div>
-    </div>
-  </div>
-
-  <p>
-    Together, these visualizations allow us to see the correlation between urbanization and access to public transit. Countries with higher urban population densities typically have better access to rapid transit systems. Use the interactive features to explore the data from 1975 to 2024.
-  </p>
-
+  <!-- Vega Embed Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  
+  <!-- Load the visualizations from your GitHub repository -->
   <script type="text/javascript">
-    // Load the Map visualization from your GitHub repository
     vegaEmbed('#map-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vg.json')
-      .then(function(result) {
-        console.log("Map visualization loaded successfully!");
-      }).catch(function(error) {
-        console.error("Error loading the Map visualization:", error);
-      });
+      .then(result => console.log("Map visualization loaded successfully!"))
+      .catch(error => console.error("Error loading the Map visualization:", error));
 
-    // Load the Heatmap visualization from your GitHub repository
     vegaEmbed('#heatmap-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(2).json')
-      .then(function(result) {
-        console.log("Heatmap visualization loaded successfully!");
-      }).catch(function(error) {
-        console.error("Error loading the Heatmap visualization:", error);
-      });
+      .then(result => console.log("Heatmap visualization loaded successfully!"))
+      .catch(error => console.error("Error loading the Heatmap visualization:", error));
 
-    // Load the Bubble chart visualization from your GitHub repository
     vegaEmbed('#bubble-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(1).json')
-      .then(function(result) {
-        console.log("Bubble chart visualization loaded successfully!");
-      }).catch(function(error) {
-        console.error("Error loading the Bubble chart visualization:", error);
-      });
+      .then(result => console.log("Bubble chart visualization loaded successfully!"))
+      .catch(error => console.error("Error loading the Bubble chart visualization:", error));
 
-    // Load the Violin Plot visualization from your GitHub repository
     vegaEmbed('#violin-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(3).json')
-      .then(function(result) {
-        console.log("Violin Plot visualization loaded successfully!");
-      }).catch(function(error) {
-        console.error("Error loading the Violin Plot visualization:", error);
-      });
+      .then(result => console.log("Violin Plot visualization loaded successfully!"))
+      .catch(error => console.error("Error loading the Violin Plot visualization:", error));
   </script>
 </body>
 </html>
