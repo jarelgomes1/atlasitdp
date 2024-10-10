@@ -153,6 +153,19 @@
         </div>
       </div>
     </div>
+
+    <!-- Fourth row for Parallel Coordinates Plot -->
+    <div class="row mt-4">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header">Parallel Coordinates Plot</div>
+          <div class="card-body">
+            <div id="parallel-coords-vis" class="visualization-container"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <!-- Footer Section -->
@@ -193,6 +206,13 @@
         console.log("Violin Plot visualization loaded successfully!");
       }).catch(function(error) {
         console.error("Error loading the Violin Plot visualization:", error);
+      });
+
+    vegaEmbed('#parallel-coords-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(4).json')
+      .then(function(result) {
+        console.log("Parallel Coordinates Plot loaded successfully!");
+      }).catch(function(error) {
+        console.error("Error loading the Parallel Coordinates Plot:", error);
       });
 
     // Dark Mode Toggle
