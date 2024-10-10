@@ -1,0 +1,136 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "hconcat": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jarelgomes1/atlasitdp/refs/heads/main/atlas_countries_merged_2024_clean.csv"
+      },
+      "transform": [
+        {
+          "fold": ["Block_Density", "Population_Density"],
+          "as": ["Indicator", "Value"]
+        },
+        {"filter": "isValid(datum.Value)"},
+        {
+          "window": [{"op": "rank", "as": "rank"}],
+          "sort": [{"field": "Value", "order": "descending"}],
+          "groupby": ["Indicator"]
+        }
+      ],
+      "layer": [
+        {
+          "mark": {"type": "line", "strokeWidth": 1},
+          "encoding": {
+            "x": {
+              "field": "Indicator",
+              "type": "nominal",
+              "title": "Indicators"
+            },
+            "y": {"field": "Value", "type": "quantitative", "title": "Values"},
+            "color": {
+              "condition": {
+                "test": "datum.rank <= 3",
+                "field": "Country",
+                "type": "nominal"
+              },
+              "value": "black"
+            },
+            "opacity": {
+              "condition": {"test": "datum.rank <= 3", "value": 1},
+              "value": 0.2
+            }
+          }
+        },
+        {
+          "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+          "encoding": {
+            "x": {"field": "Indicator", "type": "nominal"},
+            "y": {"field": "Value", "type": "quantitative"},
+            "text": {"field": "Country", "type": "nominal"},
+            "color": {"field": "Country", "type": "nominal"},
+            "opacity": {
+              "condition": {"test": "datum.rank <= 3", "value": 1},
+              "value": 0
+            }
+          }
+        }
+      ],
+      "background": "#1c1c1c",
+      "title": {
+        "text": "Block Density and Population Density by Country",
+        "fontSize": 20,
+        "color": "white"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jarelgomes1/atlasitdp/refs/heads/main/atlas_countries_merged_2024_clean.csv"
+      },
+      "transform": [
+        {
+          "fold": [
+            "Population_Near_Rapid_Transit",
+            "Population_Near_Fast_Transit",
+            "Population_Near_National_Highways",
+            "Population_Near_Cycling_Facilities",
+            "Population_Near_Sidewalks",
+            "Population_Near_Pedestrian Bridges",
+            "Population_Near_Sustainable_Transport"
+          ],
+          "as": ["Indicator", "Value"]
+        },
+        {"filter": "isValid(datum.Value)"},
+        {
+          "window": [{"op": "rank", "as": "rank"}],
+          "sort": [{"field": "Value", "order": "descending"}],
+          "groupby": ["Indicator"]
+        }
+      ],
+      "layer": [
+        {
+          "mark": {"type": "line", "strokeWidth": 1},
+          "encoding": {
+            "x": {
+              "field": "Indicator",
+              "type": "nominal",
+              "title": "Indicators"
+            },
+            "y": {"field": "Value", "type": "quantitative", "title": "Values"},
+            "color": {
+              "condition": {
+                "test": "datum.rank <= 3",
+                "field": "Country",
+                "type": "nominal"
+              },
+              "value": "black"
+            },
+            "opacity": {
+              "condition": {"test": "datum.rank <= 3", "value": 1},
+              "value": 0.2
+            }
+          }
+        },
+        {
+          "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+          "encoding": {
+            "x": {"field": "Indicator", "type": "nominal"},
+            "y": {"field": "Value", "type": "quantitative"},
+            "text": {"field": "Country", "type": "nominal"},
+            "color": {"field": "Country", "type": "nominal"},
+            "opacity": {
+              "condition": {"test": "datum.rank <= 3", "value": 1},
+              "value": 0
+            }
+          }
+        }
+      ],
+      "background": "#1c1c1c",
+      "title": {
+        "text": "Transportation Indicators by Country",
+        "fontSize": 20,
+        "color": "white"
+      }
+    }
+  ],
+  "config": {"concat": {"spacing": 10}}
+}
