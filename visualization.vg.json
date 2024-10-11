@@ -35,6 +35,36 @@
       "format": {"type": "csv", "delimiter": ","}
     },
     {
+      "name": "top_10_countries",
+      "source": "country_data",
+      "transform": [
+        {
+          "type": "aggregate",
+          "groupby": ["Country_Name"],
+          "fields": ["People_Near_Rapid_Transit"],
+          "ops": ["sum"],
+          "as": ["Total_People_Near_Rapid_Transit"]
+        },
+        {
+          "type": "window",
+          "sort": {"field": "Total_People_Near_Rapid_Transit", "order": "descending"},
+          "ops": ["rank"],
+          "as": ["rank"]
+        },
+        {
+          "type": "filter",
+          "expr": "datum.rank <= 10"
+        },
+        {
+          "type": "lookup",
+          "from": "country_data",
+          "key": "Country_Name",
+          "fields": ["Country_Name"],
+          "values": ["Year", "People_Near_Rapid_Transit"]
+        }
+      ]
+    },
+    {
       "name": "filtered_data",
       "source": "country_data",
       "transform": [
@@ -95,179 +125,157 @@
       "encode": {
         "enter": {
           "width": {"value": 500},
-          "height": {"value": 650},
+          "height": {"value": 250},
           "x": {"value": 700},
-          "y": {"value": -20}
+          "y": {"value": 50}  
         }
       },
+      "scales": [
+        {
+          "name": "xscale_top10",
+          "type": "point",
+          "domain": {"data": "top_10_countries", "field": "Year"},
+          "range": [0, 400]
+        },
+        {
+          "name": "yscale_top10",
+          "type": "linear",
+          "domain": {"data": "top_10_countries", "field": "People_Near_Rapid_Transit"},
+          "range": [200, 0]  
+        }
+      ],
+      "axes": [
+        {
+          "orient": "bottom",
+          "scale": "xscale_top10",
+          "title": "Year",
+          "labelFontSize": {"value": 14},
+          "titleFontSize": {"value": 16},
+          "titlePadding": {"value": 10}
+        },
+        {
+          "orient": "left",
+          "scale": "yscale_top10",
+          "title": "People Near Rapid Transit",
+          "labelFontSize": {"value": 14},
+          "titleFontSize": {"value": 16},
+          "titlePadding": {"value": 10}
+        }
+      ],
       "marks": [
         {
-          "type": "text",
+          "type": "line",
+          "from": {"data": "top_10_countries"},
           "encode": {
             "enter": {
-              "x": {"value": 300},
-              "y": {"value": 200},
-              "align": {"value": "center"},
-              "text": {"value": "No data available for this country"},
-              "fill": {"value": "red"},
-              "fontSize": {"value": 20}
+              "x": {"scale": "xscale_top10", "field": "Year"},
+              "y": {"scale": "yscale_top10", "field": "People_Near_Rapid_Transit"},
+              "stroke": {"value": "green"},
+              "strokeWidth": {"value": 2}
             },
-            "update": {"opacity": {"signal": "has_valid_data ? 0 : 1"}}
+            "update": {
+              "tooltip": {"signal": "{'Country': datum.Country_Name, 'Year': datum.Year, 'People Near Rapid Transit': datum.People_Near_Rapid_Transit}"}
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "encode": {
+        "enter": {
+          "width": {"value": 500},
+          "height": {"value": 300},
+          "x": {"value": 700},
+          "y": {"value": 350} 
+        }
+      },
+      "scales": [
+        {
+          "name": "xscale",
+          "type": "point",
+          "domain": {"data": "filtered_data", "field": "Year"},
+          "range": [0, 400]
+        },
+        {
+          "name": "yscale_rpt",
+          "type": "linear",
+          "domain": {
+            "data": "filtered_data",
+            "field": "People_Near_Rapid_Transit"
+          },
+          "range": [300, 0] 
+        },
+        {
+          "name": "yscale_pd",
+          "type": "linear",
+          "domain": {
+            "data": "filtered_data",
+            "field": "Population_Density"
+          },
+          "range": [300, 0]  
+        }
+      ],
+      "axes": [
+        {
+          "orient": "bottom", 
+          "scale": "xscale",
+          "title": "Year",
+          "labelFontSize": {"value": 14},
+          "titleFontSize": {"value": 16},
+          "titlePadding": {"value": 10}
+        },
+        {
+          "orient": "left",
+          "scale": "yscale_rpt",
+          "title": "People Near Rapid Transit",
+          "labelFontSize": {"value": 14},
+          "titleFontSize": {"value": 16},
+          "titlePadding": {"value": 10}
+        },
+        {
+          "orient": "right",
+          "scale": "yscale_pd",
+          "title": "Population Density",
+          "labelFontSize": {"value": 14},
+          "titleFontSize": {"value": 16},
+          "titlePadding": {"value": 10}
+        }
+      ],
+      "marks": [
+        {
+          "type": "line",
+          "from": {"data": "filtered_data"},
+          "encode": {
+            "enter": {
+              "x": {"scale": "xscale", "field": "Year"},
+              "y": {
+                "scale": "yscale_rpt",
+                "field": "People_Near_Rapid_Transit"
+              },
+              "stroke": {"value": "steelblue"},
+              "strokeWidth": {"value": 3}
+            },
+            "update": {
+              "tooltip": {"signal": "{'Year': datum.Year, 'People Near Rapid Transit': datum.People_Near_Rapid_Transit}"}
+            }
           }
         },
         {
-          "type": "group",
+          "type": "line",
+          "from": {"data": "filtered_data"},
           "encode": {
-            "update": {"opacity": {"signal": "has_valid_data ? 1 : 0"}}
-          },
-          "scales": [
-            {
-              "name": "xscale",
-              "type": "point",
-              "domain": {"data": "filtered_data", "field": "Year"},
-              "range": [0, 400]
+            "enter": {
+              "x": {"scale": "xscale", "field": "Year"},
+              "y": {"scale": "yscale_pd", "field": "Population_Density"},
+              "stroke": {"value": "orange"},
+              "strokeWidth": {"value": 3},
+              "strokeDash": {"value": [5, 5]}
             },
-            {
-              "name": "yscale_rpt",
-              "type": "linear",
-              "domain": {
-                "data": "filtered_data",
-                "field": "People_Near_Rapid_Transit"
-              },
-              "range": "height",
-              "nice": true,
-              "zero": true
-            },
-            {
-              "name": "yscale_pd",
-              "type": "linear",
-              "domain": {
-                "data": "filtered_data",
-                "field": "Population_Density"
-              },
-              "range": "height",
-              "nice": true,
-              "zero": true
+            "update": {
+              "tooltip": {"signal": "{'Year': datum.Year, 'Population Density': datum.Population_Density}"}
             }
-          ],
-          "axes": [
-            {
-              "orient": "bottom",
-              "scale": "xscale",
-              "title": "Year",
-              "labelFontSize": {"value": 14},
-              "titleFontSize": {"value": 16},
-              "titlePadding": {"value": 10}
-            },
-            {
-              "orient": "left",
-              "scale": "yscale_rpt",
-              "title": "People Near Rapid Transit",
-              "labelFontSize": {"value": 14},
-              "titleFontSize": {"value": 16},
-              "titlePadding": {"value": 10}
-            },
-            {
-              "orient": "right",
-              "scale": "yscale_pd",
-              "title": "Population Density",
-              "labelFontSize": {"value": 14},
-              "titleFontSize": {"value": 16},
-              "titlePadding": {"value": 10}
-            }
-          ],
-          "marks": [
-            {
-              "type": "line",
-              "from": {"data": "filtered_data"},
-              "encode": {
-                "enter": {
-                  "x": {"scale": "xscale", "field": "Year"},
-                  "y": {
-                    "scale": "yscale_rpt",
-                    "field": "People_Near_Rapid_Transit"
-                  },
-                  "stroke": {"value": "steelblue"},
-                  "strokeWidth": {"value": 3}
-                },
-                "update": {
-                  "tooltip": {"signal": "{'Year': datum.Year, 'People Near Rapid Transit': datum.People_Near_Rapid_Transit}"}
-                }
-              }
-            },
-            {
-              "type": "line",
-              "from": {"data": "filtered_data"},
-              "encode": {
-                "enter": {
-                  "x": {"scale": "xscale", "field": "Year"},
-                  "y": {"scale": "yscale_pd", "field": "Population_Density"},
-                  "stroke": {"value": "orange"},
-                  "strokeWidth": {"value": 3},
-                  "strokeDash": {"value": [5, 5]}
-                },
-                "update": {
-                  "tooltip": {"signal": "{'Year': datum.Year, 'Population Density': datum.Population_Density}"}
-                }
-              }
-            },
-            {
-              "type": "group",
-              "encode": {
-                "enter": {
-                  "x": {"value": 100},
-                  "y": {"value": 500}
-                }
-              },
-              "marks": [
-                {
-                  "type": "rect",
-                  "encode": {
-                    "enter": {
-                      "x": {"value": 0},
-                      "width": {"value": 20},
-                      "height": {"value": 20},
-                      "fill": {"value": "steelblue"}
-                    }
-                  }
-                },
-                {
-                  "type": "text",
-                  "encode": {
-                    "enter": {
-                      "x": {"value": 30},
-                      "y": {"value": 15},
-                      "text": {"value": "People Near Rapid Transit"},
-                      "fontSize": {"value": 14}
-                    }
-                  }
-                },
-                {
-                  "type": "rect",
-                  "encode": {
-                    "enter": {
-                      "x": {"value": 0},
-                      "y": {"value": 30},
-                      "width": {"value": 20},
-                      "height": {"value": 20},
-                      "fill": {"value": "orange"}
-                    }
-                  }
-                },
-                {
-                  "type": "text",
-                  "encode": {
-                    "enter": {
-                      "x": {"value": 30},
-                      "y": {"value": 45},
-                      "text": {"value": "Population Density"},
-                      "fontSize": {"value": 14}
-                    }
-                  }
-                }
-              ]
-            }
-          ]
+          }
         }
       ]
     }
