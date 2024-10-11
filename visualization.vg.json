@@ -189,6 +189,9 @@
                   },
                   "stroke": {"value": "steelblue"},
                   "strokeWidth": {"value": 3}
+                },
+                "update": {
+                  "tooltip": {"signal": "{'Year': datum.Year, 'People Near Rapid Transit': datum.People_Near_Rapid_Transit}"}
                 }
               }
             },
@@ -202,8 +205,67 @@
                   "stroke": {"value": "orange"},
                   "strokeWidth": {"value": 3},
                   "strokeDash": {"value": [5, 5]}
+                },
+                "update": {
+                  "tooltip": {"signal": "{'Year': datum.Year, 'Population Density': datum.Population_Density}"}
                 }
               }
+            },
+            {
+              "type": "group",
+              "encode": {
+                "enter": {
+                  "x": {"value": 100},
+                  "y": {"value": 500}
+                }
+              },
+              "marks": [
+                {
+                  "type": "rect",
+                  "encode": {
+                    "enter": {
+                      "x": {"value": 0},
+                      "width": {"value": 20},
+                      "height": {"value": 20},
+                      "fill": {"value": "steelblue"}
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "encode": {
+                    "enter": {
+                      "x": {"value": 30},
+                      "y": {"value": 15},
+                      "text": {"value": "People Near Rapid Transit"},
+                      "fontSize": {"value": 14}
+                    }
+                  }
+                },
+                {
+                  "type": "rect",
+                  "encode": {
+                    "enter": {
+                      "x": {"value": 0},
+                      "y": {"value": 30},
+                      "width": {"value": 20},
+                      "height": {"value": 20},
+                      "fill": {"value": "orange"}
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "encode": {
+                    "enter": {
+                      "x": {"value": 30},
+                      "y": {"value": 45},
+                      "text": {"value": "Population Density"},
+                      "fontSize": {"value": 14}
+                    }
+                  }
+                }
+              ]
             }
           ]
         }
