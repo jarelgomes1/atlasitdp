@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 550,
-  "height": 600,
+  "height": 650,
   "autosize": {"type": "fit", "contains": "padding"},
   "data": {
     "url": "https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/Final_Merged_Population_Density_PNRT_Data_Interpolated_Complete.csv",
@@ -36,19 +36,28 @@
           2020,
           2024
         ],
-        "tickCount": 10
+        "tickCount": 10,
+        "labelFontSize": 10
       }
     },
     "y": {
       "field": "Country_Name",
       "type": "nominal",
-      "axis": {"title": "Country", "labelAngle": 0, "grid": true}
+      "axis": {
+        "title": "Country",
+        "labelAngle": 0,
+        "grid": true,
+        "labelFontSize": 4
+      }
     },
     "color": {
       "field": "People_Near_Rapid_Transit",
       "type": "quantitative",
       "scale": {"scheme": "reds"},
-      "legend": {"title": "People Near Rapid Transit"}
+      "legend": {
+        "title": "People Near Rapid Transit",
+        "orient": "bottom"
+      }
     },
     "opacity": {"condition": {"selection": "hover", "value": 1}, "value": 0.6},
     "tooltip": [
