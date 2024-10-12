@@ -106,12 +106,12 @@
           "type": "text",
           "encode": {
             "enter": {
-              "x": {"value": 300},
+              "x": {"value": 135},
               "y": {"value": 200},
               "align": {"value": "center"},
               "text": {"value": "No data available for this country"},
               "fill": {"value": "red"},
-              "fontSize": {"value": 20}
+              "fontSize": {"value": 15}
             },
             "update": {"opacity": {"signal": "has_valid_data ? 0 : 1"}}
           }
@@ -126,7 +126,7 @@
               "name": "xscale",
               "type": "point",
               "domain": {"data": "filtered_data", "field": "Year"},
-              "range": [0, 400]
+              "range": [0, 200]
             },
             {
               "name": "yscale_rpt",
@@ -221,7 +221,7 @@
               "type": "group",
               "encode": {
                 "enter": {
-                  "x": {"value": 100},
+                  "x": {"value": 50},
                   "y": {"value": 450}  
                 }
               },
