@@ -9,23 +9,23 @@ h1 {
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 1.5px;
-    color: #2c3e50; /* Dark blue for the main title */
+    color: #1f3b4d; /* Dark blue for the main title */
 }
 
 h2 {
     margin: 15px 0;
     font-size: 1.7rem;
     font-weight: 600;
-    color: #27ae60; /* Green headers */
+    color: #287bb7; /* Blue headers */
 }
 
 /* Subtitles for Visualizations */
 .card-subtitle {
-    background-color: #c1e9cbd8; /* Pastel green background for subtitles */
+    background-color: #ffe066; /* Light yellow background for subtitles */
     padding: 10px;
     font-size: 1.3rem;
     font-weight: bold;
-    color: #555; /* Darker gray text */
+    color: #3b3b3b; /* Darker gray text */
     text-align: center;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -34,7 +34,7 @@ h2 {
 
 /* Card Header Styles */
 .card-header {
-    background-color: #27ae60; /* Green background for headers */
+    background-color: #1f77b4; /* Blue background for headers */
     font-size: 1.5rem;
     font-weight: bold;
     color: white; /* White text for contrast */
@@ -48,48 +48,48 @@ h2 {
 /* Styling for paragraphs (descriptions) */
 .card-body p {
     font-size: 1.1rem;
-    color: #666;
+    color: #555; /* Darker gray for readability */
     text-align: left;
     line-height: 1.8;
     padding: 10px 20px;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4; /* Light gray background */
     border-radius: 8px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 /* Pure Menu Styling */
 .pure-menu {
-    background-color: #fff;
+    background-color: #f9f9f9; /* Light background */
     padding: 10px;
-    color: #333;
-    border-bottom: 2px solid #27ae60;
+    color: #1f3b4d; /* Dark blue for contrast */
+    border-bottom: 2px solid #1f77b4; /* Blue border */
 }
 
 .pure-menu-heading {
-    color: #27ae60;
+    color: #1f77b4;
     font-size: 1.5rem;
 }
 
 .pure-menu-link {
-    color: #333;
+    color: #3b3b3b; /* Neutral gray text */
     font-size: 1rem;
     padding: 10px;
 }
 
 .pure-menu-link:hover {
-    color: #27ae60;
+    color: #ffcc33; /* Yellow on hover */
 }
 
-/* Green-themed buttons */
-.green-button {
-    background-color: #27ae60;
+/* Blue-themed buttons */
+.blue-button {
+    background-color: #1f77b4; /* Blue background */
     color: #fff;
     border-radius: 5px;
     padding: 10px 20px;
 }
 
-.green-button:hover {
-    background-color: #2ecc71;
+.blue-button:hover {
+    background-color: #287bb7;
 }
 
 /* Visualization Containers */
