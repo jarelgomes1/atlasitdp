@@ -106,8 +106,8 @@
         "enter": {
           "width": {"value": 500},
           "height": {"value": 350},  
-          "x": {"value": 580},
-          "y": {"value": 100}  
+          "x": {"value": 600},
+          "y": {"value": 50}  
         }
       },
       "marks": [
@@ -135,7 +135,7 @@
               "name": "xscale",
               "type": "point",
               "domain": {"data": "filtered_data", "field": "Year"},
-              "range": [0, 250]
+              "range": [0, 300]
             },
             {
               "name": "yscale_rpt",
