@@ -106,7 +106,7 @@
         "enter": {
           "width": {"value": 500},
           "height": {"value": 350},  
-          "x": {"value": 570},
+          "x": {"value": 550},
           "y": {"value": 100}  
         }
       },
@@ -161,8 +161,8 @@
               "orient": "top",
               "scale": "xscale",
               "title": "Year",
-              "labelFontSize": {"value": 14},
-              "titleFontSize": {"value": 16},
+              "labelFontSize": {"value": 10},
+              "titleFontSize": {"value": 14},
               "titlePadding": {"value": 10},
               "encode": {
                 "labels": {
@@ -178,7 +178,7 @@
               "orient": "left",
               "scale": "yscale_rpt",
               "title": " ",
-              "labelFontSize": {"value": 14},
+              "labelFontSize": {"value": 8},
               "titleFontSize": {"value": 16},
               "titlePadding": {"value": 10}
             },
@@ -186,7 +186,7 @@
               "orient": "right",
               "scale": "yscale_pd",
               "title": " ",
-              "labelFontSize": {"value": 14},
+              "labelFontSize": {"value": 8},
               "titleFontSize": {"value": 16},
               "titlePadding": {"value": 10}
             }
@@ -234,7 +234,7 @@
               "type": "group",
               "encode": {
                 "enter": {
-                  "x": {"value": 20},
+                  "x": {"value": 30},
                   "y": {"value": 450}  
                 }
               },
