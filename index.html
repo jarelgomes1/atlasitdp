@@ -41,6 +41,9 @@
       display: flex;
       justify-content: space-between;
     }
+    .card {
+      width: 48%;
+    }
     /* Dark Mode Styling */
     .dark-mode {
       background-color: #333;
@@ -83,13 +86,25 @@
       </div>
     </div>
 
-    <!-- First Row for Map/Line chart -->
+    <!-- First Row for Viz2 and Viz1 side-by-side -->
     <div class="row mt-4">
-      <div class="col-12">
+      <div class="side-by-side">
+        <!-- Viz2 (Population Near Rapid Transit by Year) on the left -->
+        <div class="card">
+          <div class="card-header">Population Near Rapid Transit by Year</div>
+          <div class="card-subtitle">
+            This line chart shows how the populations living near transit networks have changed over the years for the top 10 countries. Hover over the points to see specific values by year and country.
+          </div>
+          <div class="card-body">
+            <div id="linechart-vis" class="visualization-container"></div>
+          </div>
+        </div>
+
+        <!-- Viz1 (World Population Density and Rapid Transit Access) on the right -->
         <div class="card">
           <div class="card-header">World Population Density and Rapid Transit Access</div>
           <div class="card-subtitle">
-            Explore how population density and transit access have changed across different regions. Click on a country on the map to see its data plotted on the line chart.
+            This interactive map allows you to explore global population density and access to transit networks. Click on a country to see its data visualized on a line chart.
           </div>
           <div class="card-body">
             <div id="map-vis" class="visualization-container"></div>
@@ -166,7 +181,7 @@
   <button class="pure-button" id="dark-mode-toggle" style="margin: 10px;">Toggle Dark Mode</button>
 
   <script type="text/javascript">
-    // Load visualizations with Vega
+    // Load viz1 (World Map visualization) with Vega
     vegaEmbed('#map-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vg.json')
       .then(function(result) {
         console.log("Map visualization loaded successfully!");
@@ -174,13 +189,15 @@
         console.error("Error loading the Map visualization:", error);
       });
 
-    vegaEmbed('#heatmap-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(2).json')
+    // Load viz2 (Line Chart) with Vega-Lite
+    vegaEmbed('#linechart-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/refs/heads/main/visualization.vl%20(5).json')
       .then(function(result) {
-        console.log("Heatmap visualization loaded successfully!");
+        console.log("Line chart visualization loaded successfully!");
       }).catch(function(error) {
-        console.error("Error loading the Heatmap visualization:", error);
+        console.error("Error loading the Line chart visualization:", error);
       });
 
+    // Load Bubble Chart visualization
     vegaEmbed('#bubble-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(1).json')
       .then(function(result) {
         console.log("Bubble chart visualization loaded successfully!");
@@ -188,6 +205,15 @@
         console.error("Error loading the Bubble chart visualization:", error);
       });
 
+    // Load Heatmap visualization
+    vegaEmbed('#heatmap-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(2).json')
+      .then(function(result) {
+        console.log("Heatmap visualization loaded successfully!");
+      }).catch(function(error) {
+        console.error("Error loading the Heatmap visualization:", error);
+      });
+
+    // Load Violin Plot visualization
     vegaEmbed('#violin-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(3).json')
       .then(function(result) {
         console.log("Violin Plot visualization loaded successfully!");
@@ -195,6 +221,7 @@
         console.error("Error loading the Violin Plot visualization:", error);
       });
 
+    // Load Parallel Coordinates Plot visualization
     vegaEmbed('#parallel-coords-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(4).json')
       .then(function(result) {
         console.log("Parallel Coordinates Plot loaded successfully!");
