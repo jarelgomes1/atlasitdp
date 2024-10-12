@@ -78,6 +78,7 @@
         "color": {
           "field": "Country_Name",
           "type": "nominal",
+          "scale": {"scheme": "cividis"}, 
           "legend": {"title": "Country"}
         },
         "tooltip": [
