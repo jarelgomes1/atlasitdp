@@ -1,24 +1,30 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Violin Plot with individual country selection for comparison across six options.",
-  "width": 450,
+  "description": "Violin Plot showing top 10 countries with options for all countries, single country, and comparison.",
+  "width": 600,
   "height": 600,
   "data": {
-    "url": "https://raw.githubusercontent.com/jarelgomes1/atlasitdp/refs/heads/main/Final_Merged_Population_Density_PNRT_Data_Interpolated_Complete.csv",
+    "url": "https://raw.githubusercontent.com/jarelgomes1/atlasitdp/refs/heads/main/Top_10_Countries_Data_For_Heatmap.csv",
     "format": {"type": "csv"}
   },
-  "transform": [
-    {
-      "filter": "indexof([country1, country2, country3, country4, country5, country6], datum.Country_Name) > -1"
-    }
-  ],
   "params": [
     {
-      "name": "country1",
-      "value": "Argentina",
+      "name": "view_mode",
+      "value": "Top 10",
+      "bind": {
+        "input": "select",
+        "options": ["Top 10", "All countries", "Single country", "Compare two"],
+        "labels": ["Top 10", "All countries", "Single country", "Compare two"],
+        "name": "View mode: "
+      }
+    },
+    {
+      "name": "selected_country_single",
+      "value": null,
       "bind": {
         "input": "select",
         "options": [
+          null,
           "Argentina",
           "Brazil",
           "France",
@@ -34,6 +40,7 @@
           "Singapore"
         ],
         "labels": [
+          "All countries",
           "Argentina",
           "Brazil",
           "France",
@@ -48,12 +55,13 @@
           "Russia",
           "Singapore"
         ],
-        "name": "Country 1: "
+        "name": "Select a Country: ",
+        "element": "Single country"
       }
     },
     {
-      "name": "country2",
-      "value": "Brazil",
+      "name": "compare_country_1",
+      "value": null,
       "bind": {
         "input": "select",
         "options": [
@@ -71,12 +79,13 @@
           "Russia",
           "Singapore"
         ],
-        "name": "Country 2: "
+        "name": "Country 1: ",
+        "element": "Compare two"
       }
     },
     {
-      "name": "country3",
-      "value": "France",
+      "name": "compare_country_2",
+      "value": null,
       "bind": {
         "input": "select",
         "options": [
@@ -94,77 +103,14 @@
           "Russia",
           "Singapore"
         ],
-        "name": "Country 3: "
+        "name": "Country 2: ",
+        "element": "Compare two"
       }
-    },
+    }
+  ],
+  "transform": [
     {
-      "name": "country4",
-      "value": "Germany",
-      "bind": {
-        "input": "select",
-        "options": [
-          "Argentina",
-          "Brazil",
-          "France",
-          "Germany",
-          "Mexico",
-          "United States",
-          "Australia",
-          "Canada",
-          "China",
-          "Japan",
-          "India",
-          "Russia",
-          "Singapore"
-        ],
-        "name": "Country 4: "
-      }
-    },
-    {
-      "name": "country5",
-      "value": "Mexico",
-      "bind": {
-        "input": "select",
-        "options": [
-          "Argentina",
-          "Brazil",
-          "France",
-          "Germany",
-          "Mexico",
-          "United States",
-          "Australia",
-          "Canada",
-          "China",
-          "Japan",
-          "India",
-          "Russia",
-          "Singapore"
-        ],
-        "name": "Country 5: "
-      }
-    },
-    {
-      "name": "country6",
-      "value": "United States",
-      "bind": {
-        "input": "select",
-        "options": [
-          "Argentina",
-          "Brazil",
-          "France",
-          "Germany",
-          "Mexico",
-          "United States",
-          "Australia",
-          "Canada",
-          "China",
-          "Japan",
-          "India",
-          "Russia",
-          "Singapore"
-        ],
-        "name": "Country 6: "
-      }
+      "filter": "view_mode == 'Top 10' || (view_mode == 'All countries' && datum.Country_Name) || (view_mode == 'Single country' && datum.Country_Name == selected_country_single) || (view_mode == 'Compare two' && (datum.Country_Name == compare_country_1 || datum.Country_Name == compare_country_2))"
     }
   ],
   "layer": [
@@ -174,7 +120,7 @@
         "orient": "vertical",
         "interpolate": "monotone",
         "fill": "lightblue",
-        "opacity": 0.7
+        "opacity": 0.6
       },
       "encoding": {
         "x": {
@@ -190,11 +136,19 @@
       }
     },
     {
-      "mark": "point",
+      "mark": {
+        "type": "point",
+        "size": 80,
+        "opacity": 0.85
+      },
       "encoding": {
         "x": {"field": "People_Near_Rapid_Transit", "type": "quantitative"},
         "y": {"field": "Country_Name", "type": "nominal"},
-        "color": {"field": "Country_Name", "type": "nominal"},
+        "color": {
+          "field": "Country_Name",
+          "type": "nominal",
+          "scale": {"scheme": "cividis"}
+        },
         "tooltip": [
           {"field": "Country_Name"},
           {"field": "People_Near_Rapid_Transit"}
