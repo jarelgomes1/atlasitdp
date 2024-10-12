@@ -1,0 +1,32 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A line chart showing People Near Rapid Transit over time for the top 10 countries in specific years.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jarelgomes1/atlasitdp/refs/heads/main/Top_10_Countries_Per_Year_Population_Near_Rapid_Transit.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": {"type": "line", "point": true},
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal", "axis": {"title": "Year"}},
+    "y": {
+      "field": "People_Near_Rapid_Transit",
+      "type": "quantitative",
+      "axis": {"title": "People Near Rapid Transit"}
+    },
+    "color": {
+      "field": "Country_Name",
+      "type": "nominal",
+      "legend": {"title": "Country"}
+    },
+    "tooltip": [
+      {"field": "Year", "type": "temporal", "title": "Year"},
+      {
+        "field": "People_Near_Rapid_Transit",
+        "type": "quantitative",
+        "title": "People Near Rapid Transit"
+      },
+      {"field": "Country_Name", "type": "nominal", "title": "Country"}
+    ]
+  },
+  "config": {}
+}
