@@ -3,11 +3,27 @@
   "width": 550,
   "height": 650,
   "autosize": {"type": "fit", "contains": "padding"},
+  "params": [
+    {
+      "name": "year_selection",
+      "value": 1975,
+      "bind": {
+        "input": "range",
+        "min": 1975,
+        "max": 2024,
+        "step": 1,
+        "name": "Year"
+      }
+    }
+  ],
   "data": {
-    "url": "https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/Final_Merged_Population_Density_PNRT_Data_Interpolated_Complete.csv",
+    "url": "https://raw.githubusercontent.com/jarelgomes1/atlasitdp/refs/heads/main/Top_10_Countries_Data_For_Heatmap.csv",
     "format": {"type": "csv"}
   },
-  "transform": [{"filter": "datum.Population_Density > 0"}],
+  "transform": [
+    {"filter": "datum.Population_Density > 0"},
+    {"filter": "year(datum.Year) == year_selection"}
+  ],
   "selection": {
     "hover": {
       "type": "single",
@@ -18,28 +34,6 @@
     }
   },
   "encoding": {
-    "x": {
-      "field": "Year",
-      "type": "temporal",
-      "axis": {
-        "title": "Year",
-        "values": [
-          1975,
-          1980,
-          1985,
-          1990,
-          1995,
-          2000,
-          2005,
-          2010,
-          2015,
-          2020,
-          2024
-        ],
-        "tickCount": 10,
-        "labelFontSize": 10
-      }
-    },
     "y": {
       "field": "Country_Name",
       "type": "nominal",
@@ -47,7 +41,7 @@
         "title": "Country",
         "labelAngle": 0,
         "grid": true,
-        "labelFontSize": 4
+        "labelFontSize": 10
       }
     },
     "color": {
@@ -59,7 +53,10 @@
         "orient": "bottom"
       }
     },
-    "opacity": {"condition": {"selection": "hover", "value": 1}, "value": 0.6},
+    "opacity": {
+      "condition": {"selection": "hover", "value": 1},
+      "value": 0.6
+    },
     "tooltip": [
       {"field": "Country_Name", "type": "nominal", "title": "Country"},
       {"field": "Year", "type": "temporal", "title": "Year"},
