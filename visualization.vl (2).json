@@ -47,7 +47,10 @@
     "color": {
       "field": "People_Near_Rapid_Transit",
       "type": "quantitative",
-      "scale": {"scheme": "reds"},
+      "scale": {
+        "scheme": "yellowgreenblue",
+        "type": "sequential"
+      },
       "legend": {
         "title": "People Near Rapid Transit",
         "orient": "bottom"
