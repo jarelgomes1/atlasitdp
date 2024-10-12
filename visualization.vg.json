@@ -135,7 +135,7 @@
               "name": "xscale",
               "type": "point",
               "domain": {"data": "filtered_data", "field": "Year"},
-              "range": [0, 300]
+              "range": [0, 400]
             },
             {
               "name": "yscale_rpt",
@@ -144,7 +144,7 @@
                 "data": "filtered_data",
                 "field": "People_Near_Rapid_Transit"
               },
-              "range": [400, 0]
+              "range": [500, 0]
             },
             {
               "name": "yscale_pd",
@@ -153,7 +153,7 @@
                 "data": "filtered_data",
                 "field": "Population_Density"
               },
-              "range": [400, 0]
+              "range": [500, 0]
             }
           ],
           "axes": [
