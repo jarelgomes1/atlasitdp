@@ -180,7 +180,7 @@
 
   <script type="text/javascript">
     // Load viz1 (World Map visualization) with Vega
-    vegaEmbed('#map-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vg.json')
+    vegaEmbed('#map-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vg.json', {"actions": false})
       .then(function(result) {
         console.log("Map visualization loaded successfully!");
       }).catch(function(error) {
@@ -188,7 +188,7 @@
       });
 
     // Load viz2 (Line Chart) with Vega-Lite
-    vegaEmbed('#linechart-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/refs/heads/main/visualization.vl%20(5).json')
+    vegaEmbed('#linechart-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/refs/heads/main/visualization.vl%20(5).json', {"actions": false})
       .then(function(result) {
         console.log("Line chart visualization loaded successfully!");
       }).catch(function(error) {
@@ -196,7 +196,7 @@
       });
 
     // Load Bubble Chart visualization
-    vegaEmbed('#bubble-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(1).json')
+    vegaEmbed('#bubble-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(1).json', {"actions": false})
       .then(function(result) {
         console.log("Bubble chart visualization loaded successfully!");
       }).catch(function(error) {
@@ -204,7 +204,7 @@
       });
 
     // Load Heatmap visualization
-    vegaEmbed('#heatmap-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(2).json')
+    vegaEmbed('#heatmap-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(2).json', {"actions": false})
       .then(function(result) {
         console.log("Heatmap visualization loaded successfully!");
       }).catch(function(error) {
@@ -212,7 +212,7 @@
       });
 
     // Load Violin Plot visualization
-    vegaEmbed('#violin-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(3).json')
+    vegaEmbed('#violin-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(3).json', {"actions": false})
       .then(function(result) {
         console.log("Violin Plot visualization loaded successfully!");
       }).catch(function(error) {
@@ -220,7 +220,7 @@
       });
 
     // Load Parallel Coordinates Plot visualization
-    vegaEmbed('#parallel-coords-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(4).json')
+    vegaEmbed('#parallel-coords-vis', 'https://raw.githubusercontent.com/jarelgomes1/atlasitdp/main/visualization.vl%20(4).json', {"actions": false})
       .then(function(result) {
         console.log("Parallel Coordinates Plot loaded successfully!");
       }).catch(function(error) {
