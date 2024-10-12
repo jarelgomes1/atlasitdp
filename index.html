@@ -42,7 +42,7 @@
       justify-content: space-between;
     }
     .card {
-      width: 48%;
+      width: 100%; /* Make sure the merged visualizations fit the whole width */
     }
     /* Dark Mode Styling */
     .dark-mode {
@@ -86,28 +86,26 @@
       </div>
     </div>
 
-    <!-- First Row for Viz2 and Viz1 side-by-side -->
+    <!-- Combined Viz1 (Primary: World Map) and Viz2 (Secondary: Line Chart) Section -->
     <div class="row mt-4">
-      <div class="side-by-side">
-        <!-- Viz2 (Population Near Rapid Transit by Year) on the left -->
+      <div class="col-12">
         <div class="card">
-          <div class="card-header">Population Near Rapid Transit by Year</div>
+          <div class="card-header">Global Population Density and Transit Access Over Time</div>
           <div class="card-subtitle">
-            This line chart shows how the populations living near transit networks have changed over the years for the top 10 countries. Hover over the points to see specific values by year and country.
+            This section visualizes the global population density and transit access across regions using an interactive world map. You can click on a country to explore its data. Alongside, a line chart shows the population living near transit systems over the years for the top 10 countries.
           </div>
           <div class="card-body">
-            <div id="linechart-vis" class="visualization-container"></div>
-          </div>
-        </div>
+            <div class="side-by-side">
+              <!-- Viz2 (Line Chart) on the left -->
+              <div class="card-body">
+                <div id="linechart-vis" class="visualization-container"></div>
+              </div>
 
-        <!-- Viz1 (World Population Density and Rapid Transit Access) on the right -->
-        <div class="card">
-          <div class="card-header">World Population Density and Rapid Transit Access</div>
-          <div class="card-subtitle">
-            This interactive map allows you to explore global population density and access to transit networks. Click on a country to see its data visualized on a line chart.
-          </div>
-          <div class="card-body">
-            <div id="map-vis" class="visualization-container"></div>
+              <!-- Viz1 (World Map) on the right -->
+              <div class="card-body">
+                <div id="map-vis" class="visualization-container"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
