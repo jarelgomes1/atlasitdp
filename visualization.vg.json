@@ -106,7 +106,7 @@
         "enter": {
           "width": {"value": 500},
           "height": {"value": 350},  
-          "x": {"value": 550},
+          "x": {"value": 580},
           "y": {"value": 100}  
         }
       },
@@ -115,7 +115,7 @@
           "type": "text",
           "encode": {
             "enter": {
-              "x": {"value": 135},
+              "x": {"value": 145},
               "y": {"value": 200},
               "align": {"value": "center"},
               "text": {"value": "No data available for this country"},
@@ -135,7 +135,7 @@
               "name": "xscale",
               "type": "point",
               "domain": {"data": "filtered_data", "field": "Year"},
-              "range": [0, 200]
+              "range": [0, 250]
             },
             {
               "name": "yscale_rpt",
@@ -168,7 +168,6 @@
                 "labels": {
                   "update": {
                     "angle": {"value": 90},
-                    "align": {"value": "left"}, 
                     "dy": {"value": 10},  
                     "dx": {"value": -5} } 
                 }
